@@ -4,6 +4,8 @@
 
 An organized paper list for hyperspectral image unmixing, inspired by awesome-style survey repositories.
 
+[中文版](README.zh-CN.md)
+
 </div>
 
 <p align="center">
