@@ -1,0 +1,6 @@
+dataset,scene_type,ground_truth,common_use,url,notes
+Samson,remote sensing,endmembers and abundances,linear unmixing benchmark,TBD,TBD
+Jasper Ridge,remote sensing,endmembers and abundances,linear unmixing benchmark,TBD,TBD
+Urban,remote sensing,endmembers and abundances,linear unmixing benchmark,TBD,TBD
+Cuprite,remote sensing,reference minerals,endmember extraction and mineral mapping,TBD,TBD
+

@@ -1,0 +1,5 @@
+paper,dataset,endmembers,metric,result,protocol_notes
+Hyperspectral Blind Unmixing via First-Order Graph-Guided Sparse Nonnegative Matrix Factorization,USGS synthetic,5,SAD,0.1105 / 0.0297 / 0.0065,"FoG-SNMF at SNR 10 / 20 / 30 dB; lower is better"
+Hyperspectral Blind Unmixing via First-Order Graph-Guided Sparse Nonnegative Matrix Factorization,USGS synthetic,5,RMSE,0.0791 / 0.0612 / 0.0224,"FoG-SNMF at SNR 10 / 20 / 30 dB; lower is better"
+Hyperspectral Blind Unmixing via First-Order Graph-Guided Sparse Nonnegative Matrix Factorization,Samson,3,Mean SAD,0.0506,"FoG-SNMF; endmembers: rock / tree / water"
+Hyperspectral Blind Unmixing via First-Order Graph-Guided Sparse Nonnegative Matrix Factorization,Samson,3,RMSE,0.2270,"FoG-SNMF; endmembers: rock / tree / water"
