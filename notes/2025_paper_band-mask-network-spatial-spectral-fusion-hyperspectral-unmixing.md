@@ -13,6 +13,13 @@
 - **Tags**: linear,blind,graph
 - **Note status**: skimmed from the local PDF metadata and abstract
 
+## Quick Reading
+
+- **What it is about**: This paper studies graph for hyperspectral unmixing, centered on "Band Mask Network with Spatial-Spectral Fusion for Hyperspectral Unmixing".
+- **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
+- **Datasets used**: Urban; APEX; USGS synthetic.
+- **Experimental effect**: Evaluated on Urban; APEX; USGS synthetic with SAD/RMSE; exact result values are not yet extracted in this survey note.
+
 ## One-Sentence Summary
 
 This skim note records a linear blind unmixing, graph paper and tracks its reported evaluation on Urban; Apex; USGS.

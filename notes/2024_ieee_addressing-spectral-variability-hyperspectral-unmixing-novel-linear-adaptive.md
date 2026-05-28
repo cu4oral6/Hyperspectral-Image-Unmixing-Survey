@@ -13,6 +13,13 @@
 - **Tags**: linear,blind,nmf,graph,admm
 - **Note status**: skimmed from the local PDF metadata and abstract
 
+## Quick Reading
+
+- **What it is about**: This paper studies NMF, graph, ADMM, spectral variability for hyperspectral unmixing, centered on "Addressing Spectral Variability in Hyperspectral Unmixing with a Novel Linear Adaptive Additive Mixing Model and an Associated ADMM-Based Approach".
+- **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
+- **Datasets used**: synthetic.
+- **Experimental effect**: Evaluated on synthetic with SAD/RMSE; exact result values are not yet extracted in this survey note.
+
 ## One-Sentence Summary
 
 This skim note records a linear blind unmixing, NMF, graph, ADMM, spectral variability paper and tracks its reported evaluation on synthetic.

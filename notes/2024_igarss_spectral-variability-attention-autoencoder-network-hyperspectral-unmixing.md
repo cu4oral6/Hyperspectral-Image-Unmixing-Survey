@@ -13,6 +13,13 @@
 - **Tags**: linear,blind,autoencoder,attention
 - **Note status**: skimmed from the local PDF metadata and abstract
 
+## Quick Reading
+
+- **What it is about**: This paper studies autoencoder, spectral variability, attention for hyperspectral unmixing, centered on "A Spectral Variability Attention Autoencoder Network for Hyperspectral Unmixing".
+- **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
+- **Datasets used**: Samson; Jasper Ridge; Urban.
+- **Experimental effect**: Evaluated on Samson; Jasper Ridge; Urban with SAD/RMSE; exact result values are not yet extracted in this survey note.
+
 ## One-Sentence Summary
 
 This skim note records a linear blind unmixing, autoencoder, spectral variability, attention paper and tracks its reported evaluation on Samson; Jasper Ridge; Urban.

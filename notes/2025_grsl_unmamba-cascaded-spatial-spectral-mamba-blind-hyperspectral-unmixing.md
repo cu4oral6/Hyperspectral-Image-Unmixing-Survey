@@ -13,6 +13,13 @@
 - **Tags**: linear,blind,mamba
 - **Note status**: skimmed from the local PDF metadata and abstract
 
+## Quick Reading
+
+- **What it is about**: This paper studies Mamba for hyperspectral unmixing, centered on "UNMamba: Cascaded Spatial-Spectral Mamba for Blind Hyperspectral Unmixing".
+- **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
+- **Datasets used**: Jasper Ridge; Urban; APEX.
+- **Experimental effect**: Evaluated on Jasper Ridge; Urban; APEX with SAD/RMSE; exact result values are not yet extracted in this survey note.
+
 ## One-Sentence Summary
 
 This skim note records a linear blind unmixing, Mamba paper and tracks its reported evaluation on Jasper Ridge; Urban; Apex.

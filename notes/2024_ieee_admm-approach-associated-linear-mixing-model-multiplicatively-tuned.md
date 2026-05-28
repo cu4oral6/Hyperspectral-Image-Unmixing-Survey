@@ -13,6 +13,13 @@
 - **Tags**: linear,blind,admm
 - **Note status**: skimmed from the local PDF metadata and abstract
 
+## Quick Reading
+
+- **What it is about**: This paper studies ADMM, spectral variability for hyperspectral unmixing, centered on "An ADMM-Based Approach Associated with a Linear Mixing Model Multiplicatively Tuned to Deal with Spectral Variability in Hyperspectral Unmixing".
+- **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
+- **Datasets used**: synthetic.
+- **Experimental effect**: Evaluated on synthetic with SAD/RMSE; exact result values are not yet extracted in this survey note.
+
 ## One-Sentence Summary
 
 This skim note records a linear blind unmixing, ADMM, spectral variability paper and tracks its reported evaluation on synthetic.

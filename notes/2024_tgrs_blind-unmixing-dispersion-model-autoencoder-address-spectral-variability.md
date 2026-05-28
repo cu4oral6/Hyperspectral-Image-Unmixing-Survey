@@ -13,6 +13,13 @@
 - **Tags**: linear,blind,spectral-variability,dispersion-model,autoencoder
 - **Note status**: skimmed from the local PDF metadata and abstract
 
+## Quick Reading
+
+- **What it is about**: This paper studies dispersion model, spectral variability, two-stream autoencoder for hyperspectral unmixing, centered on "Blind Unmixing Using Dispersion Model-Based Autoencoder to Address Spectral Variability".
+- **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
+- **Datasets used**: synthetic; real datasets.
+- **Experimental effect**: Evaluated on synthetic; real datasets with SAD/RMSE; exact result values are not yet extracted in this survey note.
+
 ## One-Sentence Summary
 
 This skim note records a linear blind unmixing, dispersion model, spectral variability, two-stream autoencoder paper and tracks its reported evaluation on synthetic; real datasets.

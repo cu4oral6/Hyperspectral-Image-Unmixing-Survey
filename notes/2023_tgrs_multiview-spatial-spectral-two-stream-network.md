@@ -12,6 +12,13 @@
 - **Classification**: Linear blind unmixing
 - **Tags**: linear, blind, autoencoder, RNN, spatial-spectral, multiview, Urban, Jasper-Ridge, Cuprite
 
+## Quick Reading
+
+- **What it is about**: Proposes MSSS-Net, an unsupervised autoencoder-based two-stream network that uses RNNs to jointly exploit multiview spectral partitions and spatial neighborhood information for linear hyperspectral unmixing.
+- **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
+- **Datasets used**: USGS synthetic; Urban; Jasper Ridge; Cuprite.
+- **Experimental effect**: Evaluated on USGS synthetic; Urban; Jasper Ridge; Cuprite with SAD/RMSE; exact result values are not yet extracted in this survey note.
+
 ## One-Sentence Summary
 
 Proposes MSSS-Net, an unsupervised autoencoder-based two-stream network that uses RNNs to jointly exploit multiview spectral partitions and spatial neighborhood information for linear hyperspectral unmixing.

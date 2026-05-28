@@ -13,6 +13,13 @@
 - **Tags**: linear,blind,graph,attention
 - **Note status**: skimmed from the local PDF metadata and abstract
 
+## Quick Reading
+
+- **What it is about**: This paper studies graph, attention for hyperspectral unmixing, centered on "ACR-Net: Adaptive Correlation Refined Hyperspectral Unmixing".
+- **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
+- **Datasets used**: synthetic; Pavia.
+- **Experimental effect**: Evaluated on synthetic; Pavia with SAD/RMSE; exact result values are not yet extracted in this survey note.
+
 ## One-Sentence Summary
 
 This skim note records a linear blind unmixing, graph, attention paper and tracks its reported evaluation on synthetic; Pavia.

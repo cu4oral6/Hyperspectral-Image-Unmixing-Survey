@@ -12,6 +12,13 @@
 - **标签**：deep, diffusion, blind, unmixing-dictionary, image-synthesis, PRISMA
 - **相关早期版本**：Deep Diffusion Models and Unsupervised Hyperspectral Unmixing for Realistic Abundance Map Synthesis，CVPRW 2025，DOI：https://doi.org/10.1109/CVPRW67362.2025.00286
 
+## 速读要点
+
+- **这篇论文讲了什么**：这篇论文用多个盲线性解混算法构成字典，从真实 PRISMA 高光谱图像中提取端元和丰度图，再在丰度空间训练引导扩散模型，用于合成更真实的高光谱图像。
+- **是不是线性盲解混**：是。按本仓库分类，它属于线性盲解混：不预先给定端元光谱，而是从高光谱图像中估计端元和丰度，并以线性/重构式解混设置为主。
+- **用了哪些数据集**：PRISMA。
+- **实验效果怎么样**：在 PRISMA 上做 定性视觉对比；当前笔记尚未抽取定量解混分数。
+
 ## 一句话总结
 
 这篇论文用多个盲线性解混算法构成字典，从真实 PRISMA 高光谱图像中提取端元和丰度图，再在丰度空间训练引导扩散模型，用于合成更真实的高光谱图像。

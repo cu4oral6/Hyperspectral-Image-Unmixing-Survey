@@ -13,6 +13,13 @@
 - **Tags**: linear,blind,sparse,gan
 - **Note status**: skimmed from the local PDF metadata and abstract
 
+## Quick Reading
+
+- **What it is about**: This paper studies sparse, GAN for hyperspectral unmixing, centered on "Toward Robust Hyperspectral Unmixing: Mixed Noise Modeling and Image-Domain Regularization".
+- **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
+- **Datasets used**: Urban; synthetic.
+- **Experimental effect**: Evaluated on Urban; synthetic with SAD/RMSE; exact result values are not yet extracted in this survey note.
+
 ## One-Sentence Summary
 
 This skim note records a linear blind unmixing, sparse, GAN paper and tracks its reported evaluation on Urban; synthetic.

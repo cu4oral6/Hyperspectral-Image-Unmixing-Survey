@@ -13,6 +13,13 @@
 - **Tags**: linear,blind,nmf,admm
 - **Note status**: skimmed from the local PDF metadata and abstract
 
+## Quick Reading
+
+- **What it is about**: This paper studies NMF, ADMM for hyperspectral unmixing, centered on "Linearized ADMM for Simplicial and Nonnegative Component Analyses".
+- **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
+- **Datasets used**: datasets not yet extracted.
+- **Experimental effect**: Experiment datasets, metrics, and result values still need extraction from the paper.
+
 ## One-Sentence Summary
 
 This skim note records a linear blind unmixing, NMF, ADMM paper and tracks its reported evaluation on datasets reported in the paper.

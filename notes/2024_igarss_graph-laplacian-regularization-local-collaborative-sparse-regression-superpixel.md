@@ -13,6 +13,13 @@
 - **Tags**: linear,blind,sparse,graph,admm,attention
 - **Note status**: skimmed from the local PDF metadata and abstract
 
+## Quick Reading
+
+- **What it is about**: This paper studies sparse, graph, ADMM, attention for hyperspectral unmixing, centered on "Graph Laplacian Regularization and Local Collaborative Sparse Regression Based on Superpixel Segmentation for Hyperspectral Imagery".
+- **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
+- **Datasets used**: Cuprite; AVIRIS; USGS synthetic; synthetic.
+- **Experimental effect**: Evaluation is indexed on Cuprite; AVIRIS; USGS synthetic; synthetic; exact metrics and result values still need extraction.
+
 ## One-Sentence Summary
 
 This skim note records a linear blind unmixing, sparse, graph, ADMM, attention paper and tracks its reported evaluation on Cuprite; AVIRIS; USGS; synthetic.

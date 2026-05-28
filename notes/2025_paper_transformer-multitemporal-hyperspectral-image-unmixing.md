@@ -13,6 +13,13 @@
 - **Tags**: linear,blind,transformer,attention
 - **Note status**: skimmed from the local PDF metadata and abstract
 
+## Quick Reading
+
+- **What it is about**: This paper studies transformer, attention for hyperspectral unmixing, centered on "Transformer for Multitemporal Hyperspectral Image Unmixing".
+- **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
+- **Datasets used**: synthetic.
+- **Experimental effect**: Evaluated on synthetic with SAD/RMSE; exact result values are not yet extracted in this survey note.
+
 ## One-Sentence Summary
 
 This skim note records a linear blind unmixing, transformer, attention paper and tracks its reported evaluation on synthetic.

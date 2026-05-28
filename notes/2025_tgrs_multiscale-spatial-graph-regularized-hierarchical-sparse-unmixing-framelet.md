@@ -13,6 +13,13 @@
 - **Tags**: linear,blind,sparse,graph,admm,multiscale
 - **Note status**: skimmed from the local PDF metadata and abstract
 
+## Quick Reading
+
+- **What it is about**: This paper studies sparse, graph, ADMM, multiscale for hyperspectral unmixing, centered on "Multiscale Spatial Graph-Regularized Hierarchical Sparse Unmixing Based on the Framelet Transform".
+- **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
+- **Datasets used**: datasets not yet extracted.
+- **Experimental effect**: Datasets are not yet extracted; the paper is indexed with SAD/RMSE evaluation, but exact result values are not yet extracted in this survey note.
+
 ## One-Sentence Summary
 
 This skim note records a linear blind unmixing, sparse, graph, ADMM, multiscale paper and tracks its reported evaluation on datasets reported in the paper.

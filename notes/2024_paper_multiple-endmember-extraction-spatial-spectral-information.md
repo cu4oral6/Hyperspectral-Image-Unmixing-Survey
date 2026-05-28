@@ -13,6 +13,13 @@
 - **Tags**: linear,blind
 - **Note status**: skimmed from the local PDF metadata and abstract
 
+## Quick Reading
+
+- **What it is about**: This paper studies spectral variability for hyperspectral unmixing, centered on "Multiple Endmember Extraction Using Spatial-Spectral Information".
+- **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
+- **Datasets used**: USGS synthetic.
+- **Experimental effect**: Evaluation is indexed on USGS synthetic; exact metrics and result values still need extraction.
+
 ## One-Sentence Summary
 
 This skim note records a linear blind unmixing, spectral variability paper and tracks its reported evaluation on USGS.

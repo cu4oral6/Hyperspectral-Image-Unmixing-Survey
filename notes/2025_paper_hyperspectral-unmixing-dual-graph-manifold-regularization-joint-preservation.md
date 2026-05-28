@@ -13,6 +13,13 @@
 - **Tags**: linear,blind,nmf,graph
 - **Note status**: skimmed from the local PDF metadata and abstract
 
+## Quick Reading
+
+- **What it is about**: This paper studies NMF, graph for hyperspectral unmixing, centered on "Hyperspectral Unmixing Based on Dual-Graph Manifold Regularization: Joint Preservation of Spatial-Spectral Geometric Structure".
+- **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
+- **Datasets used**: Urban; USGS synthetic; synthetic.
+- **Experimental effect**: Evaluated on Urban; USGS synthetic; synthetic with SAD/RMSE; exact result values are not yet extracted in this survey note.
+
 ## One-Sentence Summary
 
 This skim note records a linear blind unmixing, NMF, graph paper and tracks its reported evaluation on Urban; USGS; synthetic.

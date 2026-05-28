@@ -12,6 +12,13 @@
 - **Datasets**: Jasper Ridge
 - **Tags**: linear, blind, Mamba, state-space-model, spiral-scanning, spectral-spatial, Jasper-Ridge
 
+## Quick Reading
+
+- **What it is about**: SUMamba adapts Mamba to hyperspectral unmixing by scanning local spatial patches in a center-focused spiral order and pairing this with bidirectional spectral SSM modeling.
+- **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
+- **Datasets used**: Jasper Ridge.
+- **Experimental effect**: Jasper Ridge: Mean SAD 0.046 +/- 0.0018 and RMSE 0.061 +/- 0.0032; per-endmember SAD 0.056/0.050/0.031/0.046; best overall values in the extracted comparison table.
+
 ## One-Sentence Summary
 
 SUMamba adapts Mamba to hyperspectral unmixing by scanning local spatial patches in a center-focused spiral order and pairing this with bidirectional spectral SSM modeling.

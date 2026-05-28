@@ -13,6 +13,13 @@
 - **Tags**: linear,blind,gan,attention
 - **Note status**: skimmed from the local PDF metadata and abstract
 
+## Quick Reading
+
+- **What it is about**: This paper studies GAN, attention, unfolding for hyperspectral unmixing, centered on "REDU-Net: Robust and Efficient Dynamic Unfolding Network for Abundance Estimation".
+- **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
+- **Datasets used**: Urban; USGS synthetic.
+- **Experimental effect**: Evaluation is indexed on Urban; USGS synthetic; exact metrics and result values still need extraction.
+
 ## One-Sentence Summary
 
 This skim note records a linear blind unmixing, GAN, attention, unfolding paper and tracks its reported evaluation on Urban; USGS.

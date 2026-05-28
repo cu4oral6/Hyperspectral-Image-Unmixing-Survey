@@ -13,6 +13,13 @@
 - **Tags**: linear,blind,autoencoder,graph
 - **Note status**: skimmed from the local PDF metadata and abstract
 
+## Quick Reading
+
+- **What it is about**: This paper studies autoencoder, graph, spectral variability for hyperspectral unmixing, centered on "DSFC-AE: A New Hyperspectral Unmixing Method Based on Deep Shared Fully Connected Autoencoder".
+- **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
+- **Datasets used**: datasets not yet extracted.
+- **Experimental effect**: Datasets are not yet extracted; the paper is indexed with SAD/RMSE evaluation, but exact result values are not yet extracted in this survey note.
+
 ## One-Sentence Summary
 
 This skim note records a linear blind unmixing, autoencoder, graph, spectral variability paper and tracks its reported evaluation on datasets reported in the paper.
