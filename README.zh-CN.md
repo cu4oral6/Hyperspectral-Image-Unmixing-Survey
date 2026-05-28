@@ -253,14 +253,25 @@ Y = AS + N
 
 ## 数据集
 
-| 数据集 | 场景类型 | 真实值 | 常见用途 | 链接 |
-|---|---|---|---|---|
-| Samson | 遥感 | 端元 / 丰度 | 线性解混基准 | TBD |
-| Jasper Ridge | 遥感 | 端元 / 丰度 | 线性解混基准 | TBD |
-| Urban | 遥感 | 端元 / 丰度 | 线性解混基准 | TBD |
-| Cuprite | 遥感 | 参考矿物 | 端元提取 / 矿物制图 | TBD |
-| PRISMA | 遥感 | 当前条目未使用公开丰度真值 | 高光谱图像合成 / 丰度图生成 | TBD |
-| USGS synthetic | 合成数据 | 端元 / 丰度 | 受控线性解混基准 | TBD |
+数据集记录维护在 [data/datasets.csv](data/datasets.csv)。下表汇总了论文元数据和笔记中已经明确捕获的数据集。
+
+| 数据集 | 场景类型 | 真实值 | 常见用途 | 收录论文数 | 代表论文 | 链接 |
+|---|---|---|---|---:|---|---|
+| Samson | 遥感 | 端元与丰度 | 经典线性解混基准 | 9 | Hyperspectral Blind Unmixing via First-Order Graph-Guided Sparse Nonnegative Matrix Factorization; Hyperspectral Unmixing Using l2,1 Norm-Based Robust Deep Nonnegative Matrix Factorization; +7 more | TBD |
+| Jasper Ridge | 遥感 | 端元与丰度 | 经典线性解混基准 | 7 | A Hyperspectral Unmixing Method Based on Matrix Spiral Scanning Mamba; Hyperspectral Unmixing via Nonconvex Low-Rank and Weighted Sparsity Constraints; +5 more | TBD |
+| Urban | 遥感 | 端元与丰度 | 城市线性解混基准 | 21 | An Endmember-Oriented Transformer Network for Bundle-Based Hyperspectral Unmixing; Band Mask Network with Spatial-Spectral Fusion for Hyperspectral Unmixing; +19 more | TBD |
+| Cuprite | 遥感 | 参考矿物 | 端元提取与矿物制图 | 4 | A hyperspectral unmixing model for local distance-weighted variation; Graph Laplacian Regularization and Local Collaborative Sparse Regression Based on Superpixel Segmentation for Hyperspectral Imagery; +2 more | TBD |
+| USGS synthetic | 合成数据 | 端元与丰度 | 受控合成解混基准 | 13 | A hyperspectral unmixing model for local distance-weighted variation; Band Mask Network with Spatial-Spectral Fusion for Hyperspectral Unmixing; +11 more | TBD |
+| synthetic | 合成数据 | 端元与丰度 | 通用受控合成解混实验 | 59 | MS^2AE-Net: A Multiscale Spectral-Spatial Autoencoder Network for Hyperspectral Unmixing; Physics-Guided Vision Transformer Network With Tokens Complementarity for Hyperspectral Unmixing; +57 more | TBD |
+| real datasets | 遥感 | 随论文而定 | 通用真实数据解混评估 | 19 | A Spectral-Spatial Attention Network for Hyperspectral Unmixing; Integrating Recurrent-KAN With SAM Adapter for Blind Hyperspectral Unmixing; +17 more | TBD |
+| PRISMA | 遥感 | 当前条目未使用公开丰度真值 | 高光谱图像合成与丰度图生成 | 3 | Hyperspectral Image Synthesis Through Blind Unmixing Dictionary and Deep Diffusion Models; Deep Diffusion Models and Unsupervised Hyperspectral Unmixing for Realistic Abundance Map Synthesis; +1 more | TBD |
+| APEX | 遥感 | 随论文而定 | 机载高光谱解混基准 | 3 | Band Mask Network with Spatial-Spectral Fusion for Hyperspectral Unmixing; SSLT-Net: A Spatial-Spectral Linear Transformer Unmixing Network for Hyperspectral Image; +1 more | TBD |
+| HYDICE | 遥感 | 随场景而定 | 真实高光谱基准 | 1 | SpACNN-LDVAE: Spatial Attention Convolutional Latent Dirichlet Variational Autoencoder for Hyperspectral Pixel Unmixing | TBD |
+| AVIRIS | 遥感 | 随场景而定 | 机载高光谱与矿物制图 | 1 | Graph Laplacian Regularization and Local Collaborative Sparse Regression Based on Superpixel Segmentation for Hyperspectral Imagery | TBD |
+| Pavia | 遥感 | 随基准而定 | 城市遥感基准 | 1 | ACR-Net: Adaptive Correlation Refined Hyperspectral Unmixing | TBD |
+| hyperspectral plus LiDAR | 多模态 | 随论文而定 | 结合空间/高程辅助信息的多模态解混 | 1 | MSSF-Net: A Multimodal Spectral-Spatial Feature Fusion Network for Hyperspectral Unmixing | TBD |
+| spectral library | 光谱库 | 已知光谱签名 | 稀疏/非盲解混先验 | 1 | Diffusion-Model-Based Hyperspectral Unmixing Using Spectral Prior Distribution | TBD |
+| auxiliary data | 辅助数据 | 随论文而定 | 带外部辅助信息的解混 | 1 | Adaptive Multitask Autoencoder-Based Hyperspectral Unmixing Exploiting Auxiliary Data via Graph Associations | TBD |
 
 ## 实验记录
 

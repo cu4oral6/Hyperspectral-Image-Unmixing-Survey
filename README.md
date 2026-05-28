@@ -253,14 +253,25 @@ The main editable table is in [data/papers.csv](data/papers.csv). This update in
 
 ## Datasets
 
-| Dataset | Scene Type | Ground Truth | Common Use | Link |
-|---|---|---|---|---|
-| Samson | Remote sensing | Endmembers / abundances | Linear unmixing benchmark | TBD |
-| Jasper Ridge | Remote sensing | Endmembers / abundances | Linear unmixing benchmark | TBD |
-| Urban | Remote sensing | Endmembers / abundances | Linear unmixing benchmark | TBD |
-| Cuprite | Remote sensing | Reference minerals | Endmember extraction / mineral mapping | TBD |
-| PRISMA | Remote sensing | No public abundance ground truth in listed papers | HS image synthesis / abundance generation | TBD |
-| USGS synthetic | Synthetic | Endmembers / abundances | Controlled linear unmixing benchmark | TBD |
+Dataset records are maintained in [data/datasets.csv](data/datasets.csv). The table below summarizes datasets explicitly captured in indexed paper metadata and notes.
+
+| Dataset | Scene Type | Ground Truth | Common Use | Indexed Papers | Example Papers | Link |
+|---|---|---|---|---:|---|---|
+| Samson | remote sensing | endmembers and abundances | classic linear unmixing benchmark | 9 | Hyperspectral Blind Unmixing via First-Order Graph-Guided Sparse Nonnegative Matrix Factorization; Hyperspectral Unmixing Using l2,1 Norm-Based Robust Deep Nonnegative Matrix Factorization; +7 more | TBD |
+| Jasper Ridge | remote sensing | endmembers and abundances | classic linear unmixing benchmark | 7 | A Hyperspectral Unmixing Method Based on Matrix Spiral Scanning Mamba; Hyperspectral Unmixing via Nonconvex Low-Rank and Weighted Sparsity Constraints; +5 more | TBD |
+| Urban | remote sensing | endmembers and abundances | urban linear unmixing benchmark | 21 | An Endmember-Oriented Transformer Network for Bundle-Based Hyperspectral Unmixing; Band Mask Network with Spatial-Spectral Fusion for Hyperspectral Unmixing; +19 more | TBD |
+| Cuprite | remote sensing | reference minerals | endmember extraction and mineral mapping | 4 | A hyperspectral unmixing model for local distance-weighted variation; Graph Laplacian Regularization and Local Collaborative Sparse Regression Based on Superpixel Segmentation for Hyperspectral Imagery; +2 more | TBD |
+| USGS synthetic | synthetic | endmembers and abundances | controlled synthetic HU benchmark | 13 | A hyperspectral unmixing model for local distance-weighted variation; Band Mask Network with Spatial-Spectral Fusion for Hyperspectral Unmixing; +11 more | TBD |
+| synthetic | synthetic | endmembers and abundances | generic controlled synthetic HU experiments | 59 | MS^2AE-Net: A Multiscale Spectral-Spatial Autoencoder Network for Hyperspectral Unmixing; Physics-Guided Vision Transformer Network With Tokens Complementarity for Hyperspectral Unmixing; +57 more | TBD |
+| real datasets | remote sensing | varies by paper | generic real-data HU evaluation | 19 | A Spectral-Spatial Attention Network for Hyperspectral Unmixing; Integrating Recurrent-KAN With SAM Adapter for Blind Hyperspectral Unmixing; +17 more | TBD |
+| PRISMA | remote sensing | no public abundance ground truth in listed papers | hyperspectral image synthesis and abundance-map generation | 3 | Hyperspectral Image Synthesis Through Blind Unmixing Dictionary and Deep Diffusion Models; Deep Diffusion Models and Unsupervised Hyperspectral Unmixing for Realistic Abundance Map Synthesis; +1 more | TBD |
+| APEX | remote sensing | varies by paper | airborne HSI unmixing benchmark | 3 | Band Mask Network with Spatial-Spectral Fusion for Hyperspectral Unmixing; SSLT-Net: A Spatial-Spectral Linear Transformer Unmixing Network for Hyperspectral Image; +1 more | TBD |
+| HYDICE | remote sensing | varies by scene | real HSI benchmark | 1 | SpACNN-LDVAE: Spatial Attention Convolutional Latent Dirichlet Variational Autoencoder for Hyperspectral Pixel Unmixing | TBD |
+| AVIRIS | remote sensing | varies by scene | airborne HSI and mineral mapping | 1 | Graph Laplacian Regularization and Local Collaborative Sparse Regression Based on Superpixel Segmentation for Hyperspectral Imagery | TBD |
+| Pavia | remote sensing | varies by benchmark | urban remote-sensing benchmark | 1 | ACR-Net: Adaptive Correlation Refined Hyperspectral Unmixing | TBD |
+| hyperspectral plus LiDAR | multimodal | varies by paper | multimodal unmixing with auxiliary spatial/elevation information | 1 | MSSF-Net: A Multimodal Spectral-Spatial Feature Fusion Network for Hyperspectral Unmixing | TBD |
+| spectral library | library | known spectral signatures | sparse/non-blind unmixing prior | 1 | Diffusion-Model-Based Hyperspectral Unmixing Using Spectral Prior Distribution | TBD |
+| auxiliary data | auxiliary | varies by paper | unmixing with external side information | 1 | Adaptive Multitask Autoencoder-Based Hyperspectral Unmixing Exploiting Auxiliary Data via Graph Associations | TBD |
 
 ## Benchmarks
 
