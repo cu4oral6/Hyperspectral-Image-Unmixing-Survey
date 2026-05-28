@@ -17,7 +17,7 @@
 - **这篇论文讲了什么**：论文提出 MSSS-Net，一种无监督自编码器式双流网络，用 RNN 同时建模多视角光谱分组和空间邻域信息，用于线性高光谱图像解混。
 - **是不是线性盲解混**：是。按本仓库分类，它属于线性盲解混：不预先给定端元光谱，而是从高光谱图像中估计端元和丰度，并以线性/重构式解混设置为主。
 - **用了哪些数据集**：USGS synthetic; Urban; Jasper Ridge; Cuprite。
-- **实验效果怎么样**：在 USGS synthetic; Urban; Jasper Ridge; Cuprite 上用 SAD/RMSE 评价；当前笔记尚未抽取完整数值。
+- **实验效果怎么样**：在 USGS synthetic; Urban; Jasper Ridge; Cuprite 上，实验与解混基线比较，并报告重构、丰度或端元估计有所改善，评价指标包括 SAD/RMSE/MSE。
 
 ## 一句话总结
 

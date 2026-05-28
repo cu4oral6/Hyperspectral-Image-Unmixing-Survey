@@ -18,7 +18,7 @@
 - **What it is about**: This paper studies diffusion for hyperspectral unmixing, centered on "Synthesis of Abundance Maps Through Blind Hyperspectral Unmixing and Deep Diffusion Models".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
 - **Datasets used**: Urban; PRISMA; synthetic.
-- **Experimental effect**: Evaluated on Urban; PRISMA; synthetic with SAD/RMSE; exact result values are not yet extracted in this survey note.
+- **Experimental effect**: Urban, PRISMA and synthetic scenes: reports visually plausible abundance-map synthesis from blind unmixing plus diffusion modeling.
 
 ## One-Sentence Summary
 

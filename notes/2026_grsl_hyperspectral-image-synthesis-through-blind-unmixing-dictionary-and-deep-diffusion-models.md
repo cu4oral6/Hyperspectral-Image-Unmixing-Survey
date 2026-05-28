@@ -8,7 +8,7 @@
 - **Paper**: https://doi.org/10.1109/LGRS.2025.3646054
 - **Code**: https://github.com/martinapastorino/HSI_DDPM
 - **Local PDF**: ../pdfs/Hyperspectral_Image_Synthesis_Through_Blind_Unmixing_Dictionary_and_Deep_Diffusion_Models.pdf
-- **Datasets**: PRISMA imagery over Mexico, Spain, and Italy
+- **Datasets**: PRISMA; Urban; synthetic
 - **Tags**: deep, diffusion, blind, unmixing-dictionary, image-synthesis, PRISMA
 - **Related earlier version**: "Deep Diffusion Models and Unsupervised Hyperspectral Unmixing for Realistic Abundance Map Synthesis", CVPRW 2025, DOI: https://doi.org/10.1109/CVPRW67362.2025.00286
 
@@ -16,8 +16,8 @@
 
 - **What it is about**: Uses a dictionary of blind linear unmixing algorithms to extract abundance maps from real PRISMA data, then trains a guided diffusion model in abundance space to synthesize realistic hyperspectral images.
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
-- **Datasets used**: PRISMA.
-- **Experimental effect**: Evaluates on PRISMA with qualitative visual comparison; quantitative unmixing scores are not yet extracted in this survey note.
+- **Datasets used**: PRISMA; Urban; synthetic.
+- **Experimental effect**: PRISMA, Urban and synthetic scenes: evaluates blind-unmixing-based image/abundance synthesis mainly with visual and spectral-consistency comparisons.
 
 ## One-Sentence Summary
 

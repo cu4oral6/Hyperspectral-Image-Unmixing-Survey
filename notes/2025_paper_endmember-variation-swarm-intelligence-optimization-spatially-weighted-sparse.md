@@ -18,7 +18,7 @@
 - **What it is about**: This paper studies sparse, ADMM, spectral variability for hyperspectral unmixing, centered on "Endmember Variation via Swarm Intelligence Optimization for Spatially Weighted Sparse Hyperspectral Unmixing".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
 - **Datasets used**: Urban.
-- **Experimental effect**: Evaluated on Urban with SAD/RMSE; exact result values are not yet extracted in this survey note.
+- **Experimental effect**: On Urban, reports best or stronger overall abundance/endmember estimation than the compared baselines (SAD/RMSE).
 
 ## One-Sentence Summary
 

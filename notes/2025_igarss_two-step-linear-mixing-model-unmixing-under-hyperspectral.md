@@ -9,7 +9,7 @@
 - **Code**: https://github.com/XanderHaijen/two_step_lmm
 - **Project**: TBD
 - **Local PDF**: ../pdfs/A Two-Step Linear Mixing Model for Unmixing Under Hyperspectral Variability.pdf
-- **Datasets**: TBD
+- **Datasets**: DLR HySU
 - **Tags**: linear,blind,autoencoder,attention
 - **Note status**: skimmed from the local PDF metadata and abstract
 
@@ -17,12 +17,12 @@
 
 - **What it is about**: This paper studies autoencoder, spectral variability, attention for hyperspectral unmixing, centered on "A Two-Step Linear Mixing Model for Unmixing Under Hyperspectral Variability".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
-- **Datasets used**: datasets not yet extracted.
-- **Experimental effect**: Datasets are not yet extracted; the paper is indexed with SAD/RMSE evaluation, but exact result values are not yet extracted in this survey note.
+- **Datasets used**: DLR HySU.
+- **Experimental effect**: DLR HySU: reports the best abundance RMSE in the 2LMM-generated variability test; reconstruction SAD stays comparable to ELMM variants.
 
 ## One-Sentence Summary
 
-This skim note records a linear blind unmixing, autoencoder, spectral variability, attention paper and tracks its reported evaluation on datasets reported in the paper.
+This skim note records a linear blind unmixing, autoencoder, spectral variability, attention paper and tracks its reported evaluation on DLR HySU.
 
 ## Problem
 
@@ -37,7 +37,7 @@ The paper belongs to the linear blind hyperspectral unmixing track, where endmem
 
 ## Experiments
 
-- Datasets: TBD
+- Datasets: DLR HySU
 - Metrics: SAD; RMSE
 - Code status: Verified official code/project URL from the local PDF or official page.
 - Extraction note: The local PDF abstract and metadata were used for this skim note; no verbatim abstract is reproduced here.

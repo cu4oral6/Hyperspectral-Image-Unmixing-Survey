@@ -17,7 +17,7 @@
 - **What it is about**: Proposes MSSS-Net, an unsupervised autoencoder-based two-stream network that uses RNNs to jointly exploit multiview spectral partitions and spatial neighborhood information for linear hyperspectral unmixing.
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
 - **Datasets used**: USGS synthetic; Urban; Jasper Ridge; Cuprite.
-- **Experimental effect**: Evaluated on USGS synthetic; Urban; Jasper Ridge; Cuprite with SAD/RMSE; exact result values are not yet extracted in this survey note.
+- **Experimental effect**: On USGS synthetic; Urban; Jasper Ridge; Cuprite, reports best or stronger overall abundance/endmember estimation than the compared baselines (SAD/RMSE).
 
 ## One-Sentence Summary
 

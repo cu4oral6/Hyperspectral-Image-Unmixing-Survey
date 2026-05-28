@@ -18,7 +18,7 @@
 - **What it is about**: This paper studies KAN, graph, spectral variability for hyperspectral unmixing, centered on "Preprocessing Algorithm Leveraging Geometric Modeling for Scale Correction in Hyperspectral Images for Improved Unmixing Performance".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
 - **Datasets used**: synthetic.
-- **Experimental effect**: Evaluated on synthetic with SAD/RMSE; exact result values are not yet extracted in this survey note.
+- **Experimental effect**: On synthetic, ablations report that the proposed modules improve unmixing performance (SAD/RMSE).
 
 ## One-Sentence Summary
 

@@ -9,7 +9,7 @@
 - **Code**: https://github.com/flyzzie/FACM
 - **Project**: TBD
 - **Local PDF**: ../pdfs/Hyperspectral Unmixing Using Frequency-Adaptive Convolutional-Mamba Network.pdf
-- **Datasets**: TBD
+- **Datasets**: Urban
 - **Tags**: linear,blind,mamba
 - **Note status**: skimmed from the local PDF metadata and abstract
 
@@ -17,12 +17,12 @@
 
 - **What it is about**: This paper studies Mamba, spectral variability for hyperspectral unmixing, centered on "Hyperspectral Unmixing Using Frequency-Adaptive Convolutional-Mamba Network".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
-- **Datasets used**: datasets not yet extracted.
-- **Experimental effect**: Datasets are not yet extracted; the paper is indexed with SAD/RMSE evaluation, but exact result values are not yet extracted in this survey note.
+- **Datasets used**: Urban.
+- **Experimental effect**: Urban: reports average RMSE 0.1091 and average SAD 0.1155, lower than the compared HU baselines.
 
 ## One-Sentence Summary
 
-This skim note records a linear blind unmixing, Mamba, spectral variability paper and tracks its reported evaluation on datasets reported in the paper.
+This skim note records a linear blind unmixing, Mamba, spectral variability paper and tracks its reported evaluation on Urban.
 
 ## Problem
 
@@ -37,7 +37,7 @@ The paper belongs to the linear blind hyperspectral unmixing track, where endmem
 
 ## Experiments
 
-- Datasets: TBD
+- Datasets: Urban
 - Metrics: SAD; RMSE
 - Code status: Verified official code/project URL from the local PDF or official page.
 - Extraction note: The local PDF abstract and metadata were used for this skim note; no verbatim abstract is reproduced here.

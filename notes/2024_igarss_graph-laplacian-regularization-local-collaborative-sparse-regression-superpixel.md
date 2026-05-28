@@ -9,7 +9,7 @@
 - **Code**: TBD
 - **Project**: TBD
 - **Local PDF**: ../pdfs/Graph Laplacian Regularization and Local Collaborative Sparse Regression Based on Superpixel Segmentation for Hyperspectral Imagery.pdf
-- **Datasets**: Cuprite; AVIRIS; USGS; synthetic
+- **Datasets**: Cuprite; AVIRIS; USGS synthetic; synthetic
 - **Tags**: linear,blind,sparse,graph,admm,attention
 - **Note status**: skimmed from the local PDF metadata and abstract
 
@@ -18,7 +18,7 @@
 - **What it is about**: This paper studies sparse, graph, ADMM, attention for hyperspectral unmixing, centered on "Graph Laplacian Regularization and Local Collaborative Sparse Regression Based on Superpixel Segmentation for Hyperspectral Imagery".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
 - **Datasets used**: Cuprite; AVIRIS; USGS synthetic; synthetic.
-- **Experimental effect**: Evaluation is indexed on Cuprite; AVIRIS; USGS synthetic; synthetic; exact metrics and result values still need extraction.
+- **Experimental effect**: On Cuprite; AVIRIS; USGS synthetic; synthetic, the paper reports SRE 1.28 and compares against recent HU baselines.
 
 ## One-Sentence Summary
 
@@ -37,7 +37,7 @@ The paper belongs to the linear blind hyperspectral unmixing track, where endmem
 
 ## Experiments
 
-- Datasets: Cuprite; AVIRIS; USGS; synthetic
+- Datasets: Cuprite; AVIRIS; USGS synthetic; synthetic
 - Metrics: TBD
 - Code status: TBD; no official code URL was found in the local PDF or quick verification pass.
 - Extraction note: The local PDF abstract and metadata were used for this skim note; no verbatim abstract is reproduced here.

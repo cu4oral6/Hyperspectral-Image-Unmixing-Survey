@@ -18,7 +18,7 @@
 - **What it is about**: This paper studies graph, bundle, spectral variability for hyperspectral unmixing, centered on "Bundle-Based Adaptive Dynamic PSO for Spectral Variability-Aware Endmember Extraction in Hyperspectral Imagery".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
 - **Datasets used**: Urban.
-- **Experimental effect**: Evaluation is indexed on Urban; exact metrics and result values still need extraction.
+- **Experimental effect**: Urban: reports SAD 0.1171 and about 20.1%/5.9% SAD improvement over SSEBE/DOEBE.
 
 ## One-Sentence Summary
 

@@ -9,7 +9,7 @@
 - **Code**: TBD
 - **Project**: TBD
 - **Local PDF**: ../pdfs/Multiscale Spatial Graph-Regularized Hierarchical Sparse Unmixing Based on the Framelet Transform.pdf
-- **Datasets**: TBD
+- **Datasets**: synthetic
 - **Tags**: linear,blind,sparse,graph,admm,multiscale
 - **Note status**: skimmed from the local PDF metadata and abstract
 
@@ -17,12 +17,12 @@
 
 - **What it is about**: This paper studies sparse, graph, ADMM, multiscale for hyperspectral unmixing, centered on "Multiscale Spatial Graph-Regularized Hierarchical Sparse Unmixing Based on the Framelet Transform".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
-- **Datasets used**: datasets not yet extracted.
-- **Experimental effect**: Datasets are not yet extracted; the paper is indexed with SAD/RMSE evaluation, but exact result values are not yet extracted in this survey note.
+- **Datasets used**: synthetic.
+- **Experimental effect**: On synthetic, compares with HU baselines and reports improved reconstruction, abundance, or endmember estimates (SAD/RMSE).
 
 ## One-Sentence Summary
 
-This skim note records a linear blind unmixing, sparse, graph, ADMM, multiscale paper and tracks its reported evaluation on datasets reported in the paper.
+This skim note records a linear blind unmixing, sparse, graph, ADMM, multiscale paper and tracks its reported evaluation on synthetic.
 
 ## Problem
 
@@ -37,7 +37,7 @@ The paper belongs to the linear blind hyperspectral unmixing track, where endmem
 
 ## Experiments
 
-- Datasets: TBD
+- Datasets: synthetic
 - Metrics: SAD; RMSE
 - Code status: TBD; no official code URL was found in the local PDF or quick verification pass.
 - Extraction note: The local PDF abstract and metadata were used for this skim note; no verbatim abstract is reproduced here.

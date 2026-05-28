@@ -9,20 +9,20 @@
 - **代码**：TBD
 - **项目页**：TBD
 - **本地 PDF**：../../pdfs/Noise-to-Abundance_Translation_Unsupervised_Hyperspectral_Unmixing_Based_on_Diffusion_Models.pdf
-- **数据集**：synthetic; real datasets
+- **数据集**：synthetic; 真实数据集
 - **标签**：linear,blind,diffusion,autoencoder,abundance
 - **笔记状态**：基于本地 PDF 元数据和摘要的速读笔记
 
 ## 速读要点
 
-- **这篇论文讲了什么**：这是一篇关于线性盲解混; 扩散模型; 自编码器的速读笔记，重点记录方法思路、实验设置以及代码线索；相关实验数据集为 synthetic; real datasets。
+- **这篇论文讲了什么**：这是一篇关于线性盲解混; 扩散模型; 自编码器的速读笔记，重点记录方法思路、实验设置以及代码线索；相关实验数据集为 synthetic; 真实数据集。
 - **是不是线性盲解混**：是。按本仓库分类，它属于线性盲解混：不预先给定端元光谱，而是从高光谱图像中估计端元和丰度，并以线性/重构式解混设置为主。
-- **用了哪些数据集**：synthetic; real datasets。
-- **实验效果怎么样**：在 synthetic; real datasets 上用 SAD/RMSE 评价；当前笔记尚未抽取完整数值。
+- **用了哪些数据集**：synthetic; 真实数据集。
+- **实验效果怎么样**：在 synthetic; 真实数据集上，实验与解混基线比较，并报告重构、丰度或端元估计有所改善，评价指标包括 SAD/RMSE/MSE。
 
 ## 一句话总结
 
-这是一篇关于线性盲解混; 扩散模型; 自编码器的速读笔记，重点记录方法思路、实验设置以及代码线索；相关实验数据集为 synthetic; real datasets。
+这是一篇关于线性盲解混; 扩散模型; 自编码器的速读笔记，重点记录方法思路、实验设置以及代码线索；相关实验数据集为 synthetic; 真实数据集。
 
 ## 问题
 
@@ -37,7 +37,7 @@
 
 ## 实验
 
-- 数据集：synthetic; real datasets
+- 数据集：synthetic; 真实数据集
 - 指标：SAD; RMSE
 - 代码状态：TBD；本地 PDF 与快速核验中未发现官方代码地址。
 - 摘要线索：已使用本地 PDF 摘要和元数据完成速读索引；此处不复现摘要原文。

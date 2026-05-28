@@ -9,7 +9,7 @@
 - **代码**：TBD
 - **项目页**：TBD
 - **本地 PDF**：../../pdfs/MS2AE-Net A Multiscale Spectral-Spatial Autoencoder Network for Hyperspectral Unmixing.pdf
-- **数据集**：synthetic
+- **数据集**：APEX; synthetic
 - **标签**：linear,blind,autoencoder,multiscale
 - **笔记状态**：基于本地 PDF 元数据和摘要的速读笔记
 
@@ -17,8 +17,8 @@
 
 - **这篇论文讲了什么**：这是一篇关于线性盲解混; 自编码器; 多尺度的速读笔记，重点记录方法思路、实验设置以及代码线索；相关实验数据集为 synthetic。
 - **是不是线性盲解混**：是。按本仓库分类，它属于线性盲解混：不预先给定端元光谱，而是从高光谱图像中估计端元和丰度，并以线性/重构式解混设置为主。
-- **用了哪些数据集**：synthetic。
-- **实验效果怎么样**：在 synthetic 上用 SAD/RMSE 评价；当前笔记尚未抽取完整数值。
+- **用了哪些数据集**：APEX; synthetic。
+- **实验效果怎么样**：包含 APEX 的合成与真实解混基准：论文报告 APEX 上 mean SAD/RMSE 最低，整体丰度/端元估计较强。
 
 ## 一句话总结
 
@@ -37,7 +37,7 @@
 
 ## 实验
 
-- 数据集：synthetic
+- 数据集：APEX; synthetic
 - 指标：SAD; RMSE
 - 代码状态：TBD；本地 PDF 与快速核验中未发现官方代码地址。
 - 摘要线索：已使用本地 PDF 摘要和元数据完成速读索引；此处不复现摘要原文。

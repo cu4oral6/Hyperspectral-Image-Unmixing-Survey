@@ -18,7 +18,7 @@
 - **What it is about**: This paper studies unrolled plug-and-play network for hyperspectral unmixing, centered on "Unrolling Plug-and-Play Network for Hyperspectral Unmixing".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
 - **Datasets used**: synthetic; real datasets.
-- **Experimental effect**: Evaluated on synthetic; real datasets with SAD/RMSE; exact result values are not yet extracted in this survey note.
+- **Experimental effect**: On synthetic; real datasets, compares with HU baselines and reports improved reconstruction, abundance, or endmember estimates (SAD/RMSE).
 
 ## One-Sentence Summary
 

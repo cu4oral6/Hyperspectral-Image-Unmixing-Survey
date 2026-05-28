@@ -9,7 +9,7 @@
 - **Code**: https://github.com/yuyang95/UnmixingDM
 - **Project**: TBD
 - **Local PDF**: ../pdfs/UnmixDiff_Unmixing-Based_Diffusion_Model_for_Hyperspectral_Image_Synthesis.pdf
-- **Datasets**: synthetic; real datasets
+- **Datasets**: PRISMA; synthetic
 - **Tags**: linear,blind,diffusion,image-synthesis,abundance
 - **Note status**: skimmed from the local PDF metadata and abstract
 
@@ -17,8 +17,8 @@
 
 - **What it is about**: This paper studies unmixing-based diffusion, image synthesis for hyperspectral unmixing, centered on "UnmixDiff: Unmixing-Based Diffusion Model for Hyperspectral Image Synthesis".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
-- **Datasets used**: synthetic; real datasets.
-- **Experimental effect**: Evaluates on synthetic; real datasets with visual quality/spectral consistency; quantitative unmixing scores are not yet extracted in this survey note.
+- **Datasets used**: PRISMA; synthetic.
+- **Experimental effect**: PRISMA and synthetic scenes: reports better image-synthesis visual quality and spectral consistency through unmixing-guided diffusion.
 
 ## One-Sentence Summary
 
@@ -37,7 +37,7 @@ The paper belongs to the linear blind hyperspectral unmixing track, where endmem
 
 ## Experiments
 
-- Datasets: synthetic; real datasets
+- Datasets: PRISMA; synthetic
 - Metrics: visual quality; spectral consistency
 - Code status: Verified official code/project URL from the local PDF or official page.
 - Extraction note: The local PDF abstract and metadata were used for this skim note; no verbatim abstract is reproduced here.

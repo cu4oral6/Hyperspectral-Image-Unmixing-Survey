@@ -9,7 +9,7 @@
 - **代码**：https://github.com/Preston-Dong/UNMamba
 - **项目页**：TBD
 - **本地 PDF**：../../pdfs/UNMamba Cascaded Spatial-Spectral Mamba for Blind Hyperspectral Unmixing.pdf
-- **数据集**：Jasper Ridge; Urban; Apex
+- **数据集**：Jasper Ridge; Urban; APEX
 - **标签**：linear,blind,mamba
 - **笔记状态**：基于本地 PDF 元数据和摘要的速读笔记
 
@@ -18,7 +18,7 @@
 - **这篇论文讲了什么**：这是一篇关于线性盲解混; Mamba的速读笔记，重点记录方法思路、实验设置以及代码线索；相关实验数据集为 Jasper Ridge; Urban; Apex。
 - **是不是线性盲解混**：是。按本仓库分类，它属于线性盲解混：不预先给定端元光谱，而是从高光谱图像中估计端元和丰度，并以线性/重构式解混设置为主。
 - **用了哪些数据集**：Jasper Ridge; Urban; APEX。
-- **实验效果怎么样**：在 Jasper Ridge; Urban; APEX 上用 SAD/RMSE 评价；当前笔记尚未抽取完整数值。
+- **实验效果怎么样**：Jasper Ridge、Urban、APEX：论文报告所有数据集上丰度估计更准，端元估计在多数数据集最优、APEX 上接近最优。
 
 ## 一句话总结
 
@@ -37,7 +37,7 @@
 
 ## 实验
 
-- 数据集：Jasper Ridge; Urban; Apex
+- 数据集：Jasper Ridge; Urban; APEX
 - 指标：SAD; RMSE
 - 代码状态：已从本地 PDF 或官方页面验证代码/项目地址。
 - 摘要线索：已使用本地 PDF 摘要和元数据完成速读索引；此处不复现摘要原文。

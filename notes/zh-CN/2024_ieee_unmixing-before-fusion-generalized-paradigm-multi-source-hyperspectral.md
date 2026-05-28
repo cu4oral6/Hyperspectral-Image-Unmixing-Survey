@@ -9,7 +9,7 @@
 - **代码**：https://hsi-synthesis.github.io/
 - **项目页**：https://hsi-synthesis.github.io/
 - **本地 PDF**：../../pdfs/Unmixing Before Fusion A Generalized Paradigm for Multi-Source-Based Hyperspectral Image Synthesis.pdf
-- **数据集**：synthetic
+- **数据集**：synthetic multi-source experiments
 - **标签**：linear,blind
 - **笔记状态**：基于本地 PDF 元数据和摘要的速读笔记
 
@@ -17,8 +17,8 @@
 
 - **这篇论文讲了什么**：这是一篇关于线性盲解混的速读笔记，重点记录方法思路、实验设置以及代码线索；相关实验数据集为 synthetic。
 - **是不是线性盲解混**：是。按本仓库分类，它属于线性盲解混：不预先给定端元光谱，而是从高光谱图像中估计端元和丰度，并以线性/重构式解混设置为主。
-- **用了哪些数据集**：synthetic。
-- **实验效果怎么样**：在 synthetic 上用 SAD/RMSE 评价；当前笔记尚未抽取完整数值。
+- **用了哪些数据集**：synthetic multi-source experiments。
+- **实验效果怎么样**：合成多源实验：论文报告先解混再融合可提升融合/合成质量。
 
 ## 一句话总结
 
@@ -37,7 +37,7 @@
 
 ## 实验
 
-- 数据集：synthetic
+- 数据集：synthetic multi-source experiments
 - 指标：SAD; RMSE
 - 代码状态：已从本地 PDF 或官方页面验证代码/项目地址。
 - 摘要线索：已使用本地 PDF 摘要和元数据完成速读索引；此处不复现摘要原文。

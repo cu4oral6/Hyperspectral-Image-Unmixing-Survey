@@ -9,20 +9,20 @@
 - **代码**：https://github.com/Liujehong/ProMU
 - **项目页**：TBD
 - **本地 PDF**：../../pdfs/Efficient Progressive Mamba Model for Hyperspectral Sequence Unmixing.pdf
-- **数据集**：TBD
+- **数据集**：Samson; Jasper Ridge; Urban
 - **标签**：linear,blind,transformer,mamba
 - **笔记状态**：基于本地 PDF 元数据和摘要的速读笔记
 
 ## 速读要点
 
-- **这篇论文讲了什么**：这是一篇关于线性盲解混; Transformer; Mamba的速读笔记，重点记录方法思路、实验设置以及代码线索；相关实验数据集为 论文报告的数据集。
+- **这篇论文讲了什么**：这是一篇关于线性盲解混; Transformer; Mamba的速读笔记，重点记录方法思路、实验设置以及代码线索；相关实验数据集为 Samson; Jasper Ridge; Urban。
 - **是不是线性盲解混**：是。按本仓库分类，它属于线性盲解混：不预先给定端元光谱，而是从高光谱图像中估计端元和丰度，并以线性/重构式解混设置为主。
-- **用了哪些数据集**：数据集待补。
-- **实验效果怎么样**：数据集待补；已索引 SAD/RMSE 评价，但当前笔记尚未抽取完整数值。
+- **用了哪些数据集**：Samson; Jasper Ridge; Urban。
+- **实验效果怎么样**：Samson、Jasper Ridge、Urban：论文报告丰度预测达到 SOTA，同时参数量和计算量较低，可与图像级方法竞争。
 
 ## 一句话总结
 
-这是一篇关于线性盲解混; Transformer; Mamba的速读笔记，重点记录方法思路、实验设置以及代码线索；相关实验数据集为 论文报告的数据集。
+这是一篇关于线性盲解混; Transformer; Mamba的速读笔记，重点记录方法思路、实验设置以及代码线索；相关实验数据集为 Samson; Jasper Ridge; Urban。
 
 ## 问题
 
@@ -37,7 +37,7 @@
 
 ## 实验
 
-- 数据集：TBD
+- 数据集：Samson; Jasper Ridge; Urban
 - 指标：SAD; RMSE
 - 代码状态：已从本地 PDF 或官方页面验证代码/项目地址。
 - 摘要线索：已使用本地 PDF 摘要和元数据完成速读索引；此处不复现摘要原文。

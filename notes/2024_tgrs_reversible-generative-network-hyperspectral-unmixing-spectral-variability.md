@@ -18,7 +18,7 @@
 - **What it is about**: This paper studies spectral variability, attention for hyperspectral unmixing, centered on "A Reversible Generative Network for Hyperspectral Unmixing With Spectral Variability".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
 - **Datasets used**: synthetic.
-- **Experimental effect**: Evaluated on synthetic with SAD/RMSE; exact result values are not yet extracted in this survey note.
+- **Experimental effect**: On synthetic, qualitative maps/endmember curves are reported closer to references, with evaluation using SAD/RMSE.
 
 ## One-Sentence Summary
 

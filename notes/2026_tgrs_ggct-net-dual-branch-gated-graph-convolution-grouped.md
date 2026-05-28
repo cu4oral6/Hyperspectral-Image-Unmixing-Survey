@@ -9,7 +9,7 @@
 - **Code**: TBD
 - **Project**: TBD
 - **Local PDF**: ../pdfs/GGCT-Net A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing.pdf
-- **Datasets**: TBD
+- **Datasets**: synthetic; Jasper Ridge; Samson; APEX; Ray-Tracing; Cuprite
 - **Tags**: linear,blind,transformer,graph,attention
 - **Note status**: skimmed from the local PDF metadata and abstract
 
@@ -17,12 +17,12 @@
 
 - **What it is about**: This paper studies transformer, graph, attention for hyperspectral unmixing, centered on "GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
-- **Datasets used**: datasets not yet extracted.
-- **Experimental effect**: Datasets are not yet extracted; the paper is indexed with SAD/RMSE evaluation, but exact result values are not yet extracted in this survey note.
+- **Datasets used**: synthetic; Jasper Ridge; Samson; APEX; Ray-Tracing; Cuprite.
+- **Experimental effect**: Simulated, Jasper Ridge, Samson, APEX, Ray-Tracing and Cuprite: reports best or stronger overall SAD/RMSE/SRE results than compared baselines.
 
 ## One-Sentence Summary
 
-This skim note records a linear blind unmixing, transformer, graph, attention paper and tracks its reported evaluation on datasets reported in the paper.
+This skim note records a linear blind unmixing, transformer, graph, attention paper and tracks its reported evaluation on synthetic; Jasper Ridge; Samson; APEX; Ray-Tracing; Cuprite.
 
 ## Problem
 
@@ -37,7 +37,7 @@ The paper belongs to the linear blind hyperspectral unmixing track, where endmem
 
 ## Experiments
 
-- Datasets: TBD
+- Datasets: synthetic; Jasper Ridge; Samson; APEX; Ray-Tracing; Cuprite
 - Metrics: SAD; RMSE
 - Code status: TBD; no official code URL was found in the local PDF or quick verification pass.
 - Extraction note: The local PDF abstract and metadata were used for this skim note; no verbatim abstract is reproduced here.

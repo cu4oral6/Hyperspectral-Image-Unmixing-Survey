@@ -9,7 +9,7 @@
 - **Code**: TBD
 - **Project**: TBD
 - **Local PDF**: ../pdfs/Hyperspectral Unmixing Based on Dual-Graph Manifold Regularization Joint Preservation of Spatial-Spectral Geometric Structure.pdf
-- **Datasets**: Urban; USGS; synthetic
+- **Datasets**: Urban; USGS synthetic; synthetic
 - **Tags**: linear,blind,nmf,graph
 - **Note status**: skimmed from the local PDF metadata and abstract
 
@@ -18,7 +18,7 @@
 - **What it is about**: This paper studies NMF, graph for hyperspectral unmixing, centered on "Hyperspectral Unmixing Based on Dual-Graph Manifold Regularization: Joint Preservation of Spatial-Spectral Geometric Structure".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
 - **Datasets used**: Urban; USGS synthetic; synthetic.
-- **Experimental effect**: Evaluated on Urban; USGS synthetic; synthetic with SAD/RMSE; exact result values are not yet extracted in this survey note.
+- **Experimental effect**: On Urban; USGS synthetic; synthetic, reports best or stronger overall abundance/endmember estimation than the compared baselines (SAD/RMSE).
 
 ## One-Sentence Summary
 
@@ -37,7 +37,7 @@ The paper belongs to the linear blind hyperspectral unmixing track, where endmem
 
 ## Experiments
 
-- Datasets: Urban; USGS; synthetic
+- Datasets: Urban; USGS synthetic; synthetic
 - Metrics: SAD; RMSE
 - Code status: TBD; no official code URL was found in the local PDF or quick verification pass.
 - Extraction note: The local PDF abstract and metadata were used for this skim note; no verbatim abstract is reproduced here.

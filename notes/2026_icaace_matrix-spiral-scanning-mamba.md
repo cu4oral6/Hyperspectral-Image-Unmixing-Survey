@@ -17,7 +17,7 @@
 - **What it is about**: SUMamba adapts Mamba to hyperspectral unmixing by scanning local spatial patches in a center-focused spiral order and pairing this with bidirectional spectral SSM modeling.
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
 - **Datasets used**: Jasper Ridge.
-- **Experimental effect**: Jasper Ridge: Mean SAD 0.046 +/- 0.0018 and RMSE 0.061 +/- 0.0032; per-endmember SAD 0.056/0.050/0.031/0.046; best overall values in the extracted comparison table.
+- **Experimental effect**: Jasper Ridge: Mean SAD 0.046 +/- 0.0018; RMSE 0.061 +/- 0.0032; best in the extracted table.
 
 ## One-Sentence Summary
 
@@ -36,7 +36,7 @@ Mamba is attractive for hyperspectral unmixing because state space models can ca
 
 ## Experiments
 
-- Datasets: Jasper Ridge, with 100 x 100 pixels and 224 spectral bands.
+- Datasets: Jasper Ridge
 - Baselines: uDAS, DAEU, SIDAEU, CyCU-Net, MTAEU, UST-Net, A2SAN, and UNMamba.
 - Metrics: endmember SAD and abundance RMSE.
 - Key results: SUMamba reports the best overall values in the extracted table, with Mean SAD 0.046 +/- 0.0018 and RMSE 0.061 +/- 0.0032 on Jasper Ridge. Per-endmember SAD values are 0.056 for soil, 0.050 for tree, 0.031 for water, and 0.046 for road.

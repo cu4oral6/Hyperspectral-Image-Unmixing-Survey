@@ -18,7 +18,7 @@
 - **What it is about**: This paper studies multiscale aggregation transformer for hyperspectral unmixing, centered on "MAT-Net: Multiscale Aggregation Transformer Network for Hyperspectral Unmixing".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
 - **Datasets used**: synthetic; real datasets.
-- **Experimental effect**: Evaluated on synthetic; real datasets with SAD/RMSE; exact result values are not yet extracted in this survey note.
+- **Experimental effect**: On synthetic; real datasets, reports best or stronger overall abundance/endmember estimation than the compared baselines (SAD/RMSE).
 
 ## One-Sentence Summary
 

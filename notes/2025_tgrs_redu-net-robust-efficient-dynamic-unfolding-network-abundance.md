@@ -9,7 +9,7 @@
 - **Code**: TBD
 - **Project**: TBD
 - **Local PDF**: ../pdfs/REDU-Net Robust and Efficient Dynamic Unfolding Network for Abundance Estimation.pdf
-- **Datasets**: Urban; USGS
+- **Datasets**: Urban; USGS synthetic
 - **Tags**: linear,blind,gan,attention
 - **Note status**: skimmed from the local PDF metadata and abstract
 
@@ -18,7 +18,7 @@
 - **What it is about**: This paper studies GAN, attention, unfolding for hyperspectral unmixing, centered on "REDU-Net: Robust and Efficient Dynamic Unfolding Network for Abundance Estimation".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
 - **Datasets used**: Urban; USGS synthetic.
-- **Experimental effect**: Evaluation is indexed on Urban; USGS synthetic; exact metrics and result values still need extraction.
+- **Experimental effect**: On Urban; USGS synthetic, reports best or stronger overall abundance/endmember estimation than the compared baselines (SAD/RMSE/MSE/SRE).
 
 ## One-Sentence Summary
 
@@ -37,7 +37,7 @@ The paper belongs to the linear blind hyperspectral unmixing track, where endmem
 
 ## Experiments
 
-- Datasets: Urban; USGS
+- Datasets: Urban; USGS synthetic
 - Metrics: TBD
 - Code status: TBD; no official code URL was found in the local PDF or quick verification pass.
 - Extraction note: The local PDF abstract and metadata were used for this skim note; no verbatim abstract is reproduced here.

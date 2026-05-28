@@ -9,7 +9,7 @@
 - **Code**: https://github.com/HyperSystemAndImageProc/HyperspectrlUnmixing-SSLTNet
 - **Project**: TBD
 - **Local PDF**: ../pdfs/SSLT-Net A Spatial-Spectral Linear Transformer Unmixing Network for Hyperspectral Image.pdf
-- **Datasets**: Samson; Jasper Ridge; Apex
+- **Datasets**: Samson; Jasper Ridge; APEX
 - **Tags**: linear,blind,transformer,attention,multiscale
 - **Note status**: skimmed from the local PDF metadata and abstract
 
@@ -18,7 +18,7 @@
 - **What it is about**: This paper studies transformer, attention, multiscale for hyperspectral unmixing, centered on "SSLT-Net: A Spatial-Spectral Linear Transformer Unmixing Network for Hyperspectral Image".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
 - **Datasets used**: Samson; Jasper Ridge; APEX.
-- **Experimental effect**: Evaluated on Samson; Jasper Ridge; APEX with SAD/RMSE; exact result values are not yet extracted in this survey note.
+- **Experimental effect**: On Samson; Jasper Ridge; APEX, reports best or stronger overall abundance/endmember estimation than the compared baselines (SAD/RMSE).
 
 ## One-Sentence Summary
 
@@ -37,7 +37,7 @@ The paper belongs to the linear blind hyperspectral unmixing track, where endmem
 
 ## Experiments
 
-- Datasets: Samson; Jasper Ridge; Apex
+- Datasets: Samson; Jasper Ridge; APEX
 - Metrics: SAD; RMSE
 - Code status: Verified official code/project URL from the local PDF or official page.
 - Extraction note: The local PDF abstract and metadata were used for this skim note; no verbatim abstract is reproduced here.

@@ -9,7 +9,7 @@
 - **Code**: TBD
 - **Project**: TBD
 - **Local PDF**: ../pdfs/Two-Stage Evolutionary Algorithm Based on Subspace Specified Searching for Hyperspectral Endmember Extraction.pdf
-- **Datasets**: TBD
+- **Datasets**: Urban; Cuprite; USGS synthetic
 - **Tags**: linear,blind,graph
 - **Note status**: skimmed from the local PDF metadata and abstract
 
@@ -17,12 +17,12 @@
 
 - **What it is about**: This paper studies graph for hyperspectral unmixing, centered on "Two-Stage Evolutionary Algorithm Based on Subspace Specified Searching for Hyperspectral Endmember Extraction".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
-- **Datasets used**: datasets not yet extracted.
-- **Experimental effect**: Experiment datasets, metrics, and result values still need extraction from the paper.
+- **Datasets used**: Urban; Cuprite; USGS synthetic.
+- **Experimental effect**: On Urban; Cuprite; USGS synthetic, reports best or stronger overall abundance/endmember estimation than the compared baselines (Mean SAD/SAD/RMSE/MSE).
 
 ## One-Sentence Summary
 
-This skim note records a linear blind unmixing, graph paper and tracks its reported evaluation on datasets reported in the paper.
+This skim note records a linear blind unmixing, graph paper and tracks its reported evaluation on Urban; Cuprite; USGS synthetic.
 
 ## Problem
 
@@ -37,7 +37,7 @@ The paper belongs to the linear blind hyperspectral unmixing track, where endmem
 
 ## Experiments
 
-- Datasets: TBD
+- Datasets: Urban; Cuprite; USGS synthetic
 - Metrics: TBD
 - Code status: TBD; no official code URL was found in the local PDF or quick verification pass.
 - Extraction note: The local PDF abstract and metadata were used for this skim note; no verbatim abstract is reproduced here.

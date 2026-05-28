@@ -9,7 +9,7 @@
 - **Code**: TBD
 - **Project**: TBD
 - **Local PDF**: ../pdfs/MS2AE-Net A Multiscale Spectral-Spatial Autoencoder Network for Hyperspectral Unmixing.pdf
-- **Datasets**: synthetic
+- **Datasets**: APEX; synthetic
 - **Tags**: linear,blind,autoencoder,multiscale
 - **Note status**: skimmed from the local PDF metadata and abstract
 
@@ -17,8 +17,8 @@
 
 - **What it is about**: This paper studies autoencoder, multiscale for hyperspectral unmixing, centered on "MS^2AE-Net: A Multiscale Spectral-Spatial Autoencoder Network for Hyperspectral Unmixing".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
-- **Datasets used**: synthetic.
-- **Experimental effect**: Evaluated on synthetic with SAD/RMSE; exact result values are not yet extracted in this survey note.
+- **Datasets used**: APEX; synthetic.
+- **Experimental effect**: Synthetic and real HU benchmarks including APEX: reports lowest mean SAD/RMSE on APEX and strong overall abundance/endmember estimates.
 
 ## One-Sentence Summary
 
@@ -37,7 +37,7 @@ The paper belongs to the linear blind hyperspectral unmixing track, where endmem
 
 ## Experiments
 
-- Datasets: synthetic
+- Datasets: APEX; synthetic
 - Metrics: SAD; RMSE
 - Code status: TBD; no official code URL was found in the local PDF or quick verification pass.
 - Extraction note: The local PDF abstract and metadata were used for this skim note; no verbatim abstract is reproduced here.

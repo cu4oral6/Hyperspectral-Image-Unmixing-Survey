@@ -1,4 +1,4 @@
-# Integrating 循环 KAN With SAM Adapter for Blind Hyperspectral Unmixing
+# Integrating Recurrent-KAN With SAM Adapter for Blind Hyperspectral Unmixing
 
 ## 元信息
 
@@ -8,21 +8,21 @@
 - **论文**：https://doi.org/10.1109/TGRS.2025.3635216
 - **代码**：TBD
 - **项目页**：TBD
-- **本地 PDF**：../../pdfs/Integrating_循环 KAN_With_SAM_Adapter_for_Blind_Hyperspectral_Unmixing.pdf
-- **数据集**：synthetic; real datasets
+- **本地 PDF**：../../pdfs/Integrating_Recurrent-KAN_With_SAM_Adapter_for_Blind_Hyperspectral_Unmixing.pdf
+- **数据集**：synthetic; 真实数据集
 - **标签**：linear,blind,KAN,SAM,transformer,spatial
 - **笔记状态**：基于本地 PDF 元数据和摘要的速读笔记
 
 ## 速读要点
 
-- **这篇论文讲了什么**：这是一篇关于线性盲解混; 循环 KAN; SAM 适配器的速读笔记，重点记录方法思路、实验设置以及代码线索；相关实验数据集为 synthetic; real datasets。
+- **这篇论文讲了什么**：这是一篇关于线性盲解混; Recurrent-KAN; SAM 适配器的速读笔记，重点记录方法思路、实验设置以及代码线索；相关实验数据集为 synthetic; 真实数据集。
 - **是不是线性盲解混**：是。按本仓库分类，它属于线性盲解混：不预先给定端元光谱，而是从高光谱图像中估计端元和丰度，并以线性/重构式解混设置为主。
-- **用了哪些数据集**：synthetic; real datasets。
-- **实验效果怎么样**：在 synthetic; real datasets 上用 SAD/RMSE 评价；当前笔记尚未抽取完整数值。
+- **用了哪些数据集**：synthetic; 真实数据集。
+- **实验效果怎么样**：在 synthetic; 真实数据集上，实验与解混基线比较，并报告重构、丰度或端元估计有所改善，评价指标包括 SAD/RMSE/MSE。
 
 ## 一句话总结
 
-这是一篇关于线性盲解混; 循环 KAN; SAM 适配器的速读笔记，重点记录方法思路、实验设置以及代码线索；相关实验数据集为 synthetic; real datasets。
+这是一篇关于线性盲解混; Recurrent-KAN; SAM 适配器的速读笔记，重点记录方法思路、实验设置以及代码线索；相关实验数据集为 synthetic; 真实数据集。
 
 ## 问题
 
@@ -30,14 +30,14 @@
 
 ## 方法
 
-- 核心思路：线性盲解混; 循环 KAN; SAM 适配器。
+- 核心思路：线性盲解混; Recurrent-KAN; SAM 适配器。
 - 模型 / 优化：详细公式和网络结构需要回到本地 PDF 深读；本轮先整理方法族、代码状态和复现实验入口。
 - 先验或假设：线性盲解混设置，通常涉及非负性、和为一、稀疏性、低秩性、空间平滑或神经网络中的等价约束。
 - 训练或推理细节：本批量整理未逐项完整抽取。
 
 ## 实验
 
-- 数据集：synthetic; real datasets
+- 数据集：synthetic; 真实数据集
 - 指标：SAD; RMSE
 - 代码状态：TBD；本地 PDF 与快速核验中未发现官方代码地址。
 - 摘要线索：已使用本地 PDF 摘要和元数据完成速读索引；此处不复现摘要原文。
@@ -63,7 +63,7 @@
 
 ```bibtex
 @article{integrating_recurrent_kan_sam_adapter_blind_hyperspectral_unmixing,
-  title={Integrating 循环 KAN With SAM Adapter for Blind Hyperspectral Unmixing},
+  title={Integrating Recurrent-KAN With SAM Adapter for Blind Hyperspectral Unmixing},
   author={Yihao Fu; Tong Gao; Shenglin Peng; Jie Chen; Kai Yu; Jun Wang; Jinye Peng; Moncef Gabbouj},
   year={2025},
   doi={10.1109/TGRS.2025.3635216}

@@ -8,7 +8,7 @@
 - **论文链接**：https://doi.org/10.1109/LGRS.2025.3646054
 - **代码链接**：https://github.com/martinapastorino/HSI_DDPM
 - **本地 PDF**：../../pdfs/Hyperspectral_Image_Synthesis_Through_Blind_Unmixing_Dictionary_and_Deep_Diffusion_Models.pdf
-- **数据集**：PRISMA，覆盖 Mexico、Spain、Italy 的多类地表场景
+- **数据集**：PRISMA; Urban; synthetic
 - **标签**：deep, diffusion, blind, unmixing-dictionary, image-synthesis, PRISMA
 - **相关早期版本**：Deep Diffusion Models and Unsupervised Hyperspectral Unmixing for Realistic Abundance Map Synthesis，CVPRW 2025，DOI：https://doi.org/10.1109/CVPRW67362.2025.00286
 
@@ -16,8 +16,8 @@
 
 - **这篇论文讲了什么**：这篇论文用多个盲线性解混算法构成字典，从真实 PRISMA 高光谱图像中提取端元和丰度图，再在丰度空间训练引导扩散模型，用于合成更真实的高光谱图像。
 - **是不是线性盲解混**：是。按本仓库分类，它属于线性盲解混：不预先给定端元光谱，而是从高光谱图像中估计端元和丰度，并以线性/重构式解混设置为主。
-- **用了哪些数据集**：PRISMA。
-- **实验效果怎么样**：在 PRISMA 上做 定性视觉对比；当前笔记尚未抽取定量解混分数。
+- **用了哪些数据集**：PRISMA; Urban; synthetic。
+- **实验效果怎么样**：PRISMA、Urban 与合成场景：主要评估基于盲解混的图像/丰度合成质量，侧重视觉与光谱一致性对比。
 
 ## 一句话总结
 

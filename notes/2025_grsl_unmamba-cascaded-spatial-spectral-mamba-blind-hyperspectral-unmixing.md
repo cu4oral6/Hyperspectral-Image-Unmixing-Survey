@@ -9,7 +9,7 @@
 - **Code**: https://github.com/Preston-Dong/UNMamba
 - **Project**: TBD
 - **Local PDF**: ../pdfs/UNMamba Cascaded Spatial-Spectral Mamba for Blind Hyperspectral Unmixing.pdf
-- **Datasets**: Jasper Ridge; Urban; Apex
+- **Datasets**: Jasper Ridge; Urban; APEX
 - **Tags**: linear,blind,mamba
 - **Note status**: skimmed from the local PDF metadata and abstract
 
@@ -18,7 +18,7 @@
 - **What it is about**: This paper studies Mamba for hyperspectral unmixing, centered on "UNMamba: Cascaded Spatial-Spectral Mamba for Blind Hyperspectral Unmixing".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
 - **Datasets used**: Jasper Ridge; Urban; APEX.
-- **Experimental effect**: Evaluated on Jasper Ridge; Urban; APEX with SAD/RMSE; exact result values are not yet extracted in this survey note.
+- **Experimental effect**: Jasper Ridge, Urban and APEX: reports superior abundance accuracy on all datasets; endmember estimation is best on most datasets and comparable on APEX.
 
 ## One-Sentence Summary
 
@@ -37,7 +37,7 @@ The paper belongs to the linear blind hyperspectral unmixing track, where endmem
 
 ## Experiments
 
-- Datasets: Jasper Ridge; Urban; Apex
+- Datasets: Jasper Ridge; Urban; APEX
 - Metrics: SAD; RMSE
 - Code status: Verified official code/project URL from the local PDF or official page.
 - Extraction note: The local PDF abstract and metadata were used for this skim note; no verbatim abstract is reproduced here.

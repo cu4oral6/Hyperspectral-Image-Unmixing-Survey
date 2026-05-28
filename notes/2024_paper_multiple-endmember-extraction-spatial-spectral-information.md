@@ -9,7 +9,7 @@
 - **Code**: TBD
 - **Project**: TBD
 - **Local PDF**: ../pdfs/Multiple Endmember Extraction Using Spatial-Spectral Information.pdf
-- **Datasets**: USGS
+- **Datasets**: USGS synthetic
 - **Tags**: linear,blind
 - **Note status**: skimmed from the local PDF metadata and abstract
 
@@ -18,7 +18,7 @@
 - **What it is about**: This paper studies spectral variability for hyperspectral unmixing, centered on "Multiple Endmember Extraction Using Spatial-Spectral Information".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
 - **Datasets used**: USGS synthetic.
-- **Experimental effect**: Evaluation is indexed on USGS synthetic; exact metrics and result values still need extraction.
+- **Experimental effect**: On USGS synthetic, ablations report that the proposed modules improve unmixing performance (SAD/RMSE/MSE/OA).
 
 ## One-Sentence Summary
 
@@ -37,7 +37,7 @@ The paper belongs to the linear blind hyperspectral unmixing track, where endmem
 
 ## Experiments
 
-- Datasets: USGS
+- Datasets: USGS synthetic
 - Metrics: TBD
 - Code status: TBD; no official code URL was found in the local PDF or quick verification pass.
 - Extraction note: The local PDF abstract and metadata were used for this skim note; no verbatim abstract is reproduced here.

@@ -9,7 +9,7 @@
 - **Code**: TBD
 - **Project**: TBD
 - **Local PDF**: ../pdfs/Linearized ADMM for Simplicial and Nonnegative Component Analyses.pdf
-- **Datasets**: TBD
+- **Datasets**: synthetic numerical SCA/NCA tests
 - **Tags**: linear,blind,nmf,admm
 - **Note status**: skimmed from the local PDF metadata and abstract
 
@@ -17,12 +17,12 @@
 
 - **What it is about**: This paper studies NMF, ADMM for hyperspectral unmixing, centered on "Linearized ADMM for Simplicial and Nonnegative Component Analyses".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
-- **Datasets used**: datasets not yet extracted.
-- **Experimental effect**: Experiment datasets, metrics, and result values still need extraction from the paper.
+- **Datasets used**: synthetic numerical SCA/NCA tests.
+- **Experimental effect**: Synthetic numerical SCA/NCA tests: reports faster unified optimization behavior than baseline solvers rather than a named HSI benchmark table.
 
 ## One-Sentence Summary
 
-This skim note records a linear blind unmixing, NMF, ADMM paper and tracks its reported evaluation on datasets reported in the paper.
+This skim note records a linear blind unmixing, NMF, ADMM paper and tracks its reported evaluation on synthetic numerical SCA/NCA tests.
 
 ## Problem
 
@@ -37,7 +37,7 @@ The paper belongs to the linear blind hyperspectral unmixing track, where endmem
 
 ## Experiments
 
-- Datasets: TBD
+- Datasets: synthetic numerical SCA/NCA tests
 - Metrics: TBD
 - Code status: TBD; no official code URL was found in the local PDF or quick verification pass.
 - Extraction note: The local PDF abstract and metadata were used for this skim note; no verbatim abstract is reproduced here.

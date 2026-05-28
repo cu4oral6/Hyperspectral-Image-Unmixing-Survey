@@ -18,7 +18,7 @@
 - **What it is about**: This paper studies NMF for hyperspectral unmixing, centered on "Hyperspectral Unmixing Using l2,1 Norm-Based Robust Deep Nonnegative Matrix Factorization".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
 - **Datasets used**: Samson; synthetic.
-- **Experimental effect**: Evaluated on Samson; synthetic with SAD/RMSE; exact result values are not yet extracted in this survey note.
+- **Experimental effect**: On Samson; synthetic, reports best or stronger overall abundance/endmember estimation than the compared baselines (SAD/RMSE).
 
 ## One-Sentence Summary
 

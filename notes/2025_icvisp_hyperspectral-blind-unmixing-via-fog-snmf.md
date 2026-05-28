@@ -8,7 +8,7 @@
 - **Paper**: https://doi.org/10.1109/ICVISP68610.2025.11451711
 - **Code**: TBD
 - **Local PDF**: ../pdfs/Hyperspectral_Blind_Unmixing_via_First-Order_Graph-Guided_Sparse_Nonnegative_Matrix_Factorization.pdf
-- **Datasets**: USGS synthetic data; Samson
+- **Datasets**: USGS synthetic; Samson
 - **Tags**: nmf, sparse, graph, spatial-spectral, blind, Samson
 
 ## Quick Reading
@@ -16,7 +16,7 @@
 - **What it is about**: Proposes FoG-SNMF, a sparse NMF blind unmixing model that adds first-order graph-difference spatial regularization and dual weighting to improve abundance and endmember estimation.
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
 - **Datasets used**: USGS synthetic; Samson.
-- **Experimental effect**: USGS synthetic: SAD 0.1105/0.0297/0.0065 and RMSE 0.0791/0.0612/0.0224 at 10/20/30 dB; Samson: Mean SAD 0.0506 and RMSE 0.2270.
+- **Experimental effect**: USGS synthetic: SAD/RMSE reported at 10/20/30 dB; Samson: Mean SAD 0.0506 and RMSE 0.2270.
 
 ## One-Sentence Summary
 

@@ -9,7 +9,7 @@
 - **Code**: TBD
 - **Project**: TBD
 - **Local PDF**: ../pdfs/Plug-and-Play Prior for Sparse Hyperspectral Image Unmixing.pdf
-- **Datasets**: TBD
+- **Datasets**: Jasper Ridge; synthetic
 - **Tags**: linear,blind,sparse,admm
 - **Note status**: skimmed from the local PDF metadata and abstract
 
@@ -17,12 +17,12 @@
 
 - **What it is about**: This paper studies sparse, ADMM, plug-and-play for hyperspectral unmixing, centered on "Plug-and-Play Prior for Sparse Hyperspectral Image Unmixing".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
-- **Datasets used**: datasets not yet extracted.
-- **Experimental effect**: Datasets are not yet extracted; the paper is indexed with SAD/RMSE evaluation, but exact result values are not yet extracted in this survey note.
+- **Datasets used**: Jasper Ridge; synthetic.
+- **Experimental effect**: On Jasper Ridge; synthetic, ablations report that the proposed modules improve unmixing performance (SAD/RMSE).
 
 ## One-Sentence Summary
 
-This skim note records a linear blind unmixing, sparse, ADMM, plug-and-play paper and tracks its reported evaluation on datasets reported in the paper.
+This skim note records a linear blind unmixing, sparse, ADMM, plug-and-play paper and tracks its reported evaluation on Jasper Ridge; synthetic.
 
 ## Problem
 
@@ -37,7 +37,7 @@ The paper belongs to the linear blind hyperspectral unmixing track, where endmem
 
 ## Experiments
 
-- Datasets: TBD
+- Datasets: Jasper Ridge; synthetic
 - Metrics: SAD; RMSE
 - Code status: TBD; no official code URL was found in the local PDF or quick verification pass.
 - Extraction note: The local PDF abstract and metadata were used for this skim note; no verbatim abstract is reproduced here.

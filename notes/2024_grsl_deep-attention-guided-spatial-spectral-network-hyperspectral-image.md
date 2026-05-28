@@ -18,7 +18,7 @@
 - **What it is about**: This paper studies autoencoder, attention for hyperspectral unmixing, centered on "Deep Attention-Guided Spatial-Spectral Network for Hyperspectral Image Unmixing".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
 - **Datasets used**: Samson; Jasper Ridge.
-- **Experimental effect**: Evaluated on Samson; Jasper Ridge with SAD/RMSE; exact result values are not yet extracted in this survey note.
+- **Experimental effect**: On Samson; Jasper Ridge, compares with HU baselines and reports improved reconstruction, abundance, or endmember estimates (SAD/RMSE).
 
 ## One-Sentence Summary
 

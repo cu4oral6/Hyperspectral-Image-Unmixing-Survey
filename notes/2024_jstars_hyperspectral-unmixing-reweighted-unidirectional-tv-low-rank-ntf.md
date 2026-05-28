@@ -18,7 +18,7 @@
 - **What it is about**: This paper studies sparse, low-rank, tensor for hyperspectral unmixing, centered on "Hyperspectral Unmixing Using Reweighted Unidirectional TV Low-Rank NTF With Multiple-Factor Collaboration Regularization".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
 - **Datasets used**: synthetic.
-- **Experimental effect**: Evaluated on synthetic with SAD/RMSE; exact result values are not yet extracted in this survey note.
+- **Experimental effect**: On synthetic, reports best or stronger overall abundance/endmember estimation than the compared baselines (SAD/RMSE).
 
 ## One-Sentence Summary
 

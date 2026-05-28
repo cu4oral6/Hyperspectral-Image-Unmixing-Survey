@@ -9,7 +9,7 @@
 - **Code**: TBD
 - **Project**: TBD
 - **Local PDF**: ../pdfs/DSFC-AE A New Hyperspectral Unmixing Method Based on Deep Shared Fully Connected Autoencoder.pdf
-- **Datasets**: TBD
+- **Datasets**: Samson; Jasper Ridge; Urban
 - **Tags**: linear,blind,autoencoder,graph
 - **Note status**: skimmed from the local PDF metadata and abstract
 
@@ -17,12 +17,12 @@
 
 - **What it is about**: This paper studies autoencoder, graph, spectral variability for hyperspectral unmixing, centered on "DSFC-AE: A New Hyperspectral Unmixing Method Based on Deep Shared Fully Connected Autoencoder".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
-- **Datasets used**: datasets not yet extracted.
-- **Experimental effect**: Datasets are not yet extracted; the paper is indexed with SAD/RMSE evaluation, but exact result values are not yet extracted in this survey note.
+- **Datasets used**: Samson; Jasper Ridge; Urban.
+- **Experimental effect**: Samson, Jasper Ridge and Urban: reports optimal results across the three real datasets and the smallest endmember-estimation standard deviations.
 
 ## One-Sentence Summary
 
-This skim note records a linear blind unmixing, autoencoder, graph, spectral variability paper and tracks its reported evaluation on datasets reported in the paper.
+This skim note records a linear blind unmixing, autoencoder, graph, spectral variability paper and tracks its reported evaluation on Samson; Jasper Ridge; Urban.
 
 ## Problem
 
@@ -37,7 +37,7 @@ The paper belongs to the linear blind hyperspectral unmixing track, where endmem
 
 ## Experiments
 
-- Datasets: TBD
+- Datasets: Samson; Jasper Ridge; Urban
 - Metrics: SAD; RMSE
 - Code status: TBD; no official code URL was found in the local PDF or quick verification pass.
 - Extraction note: The local PDF abstract and metadata were used for this skim note; no verbatim abstract is reproduced here.

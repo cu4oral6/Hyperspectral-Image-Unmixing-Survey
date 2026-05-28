@@ -8,7 +8,7 @@
 - **论文链接**：https://doi.org/10.1109/ICVISP68610.2025.11451711
 - **代码链接**：TBD
 - **本地 PDF**：../../pdfs/Hyperspectral_Blind_Unmixing_via_First-Order_Graph-Guided_Sparse_Nonnegative_Matrix_Factorization.pdf
-- **数据集**：USGS synthetic data; Samson
+- **数据集**：USGS synthetic; Samson
 - **标签**：nmf, sparse, graph, spatial-spectral, blind, Samson
 
 ## 速读要点
@@ -16,7 +16,7 @@
 - **这篇论文讲了什么**：论文提出 FoG-SNMF，在稀疏 NMF 盲解混框架中加入一阶图差分空间正则和双权重约束，以提升端元提取和丰度估计精度。
 - **是不是线性盲解混**：是。按本仓库分类，它属于线性盲解混：不预先给定端元光谱，而是从高光谱图像中估计端元和丰度，并以线性/重构式解混设置为主。
 - **用了哪些数据集**：USGS synthetic; Samson。
-- **实验效果怎么样**：USGS synthetic：10/20/30 dB 下 SAD 为 0.1105/0.0297/0.0065，RMSE 为 0.0791/0.0612/0.0224；Samson：Mean SAD 0.0506，RMSE 0.2270。
+- **实验效果怎么样**：USGS synthetic：报告 10/20/30 dB 下的 SAD/RMSE；Samson：Mean SAD 0.0506，RMSE 0.2270。
 
 ## 一句话总结
 

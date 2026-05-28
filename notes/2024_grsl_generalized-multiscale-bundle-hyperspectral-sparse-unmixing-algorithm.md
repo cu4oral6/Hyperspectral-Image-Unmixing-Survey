@@ -9,7 +9,7 @@
 - **Code**: https://github.com/lucayress/GMBUA
 - **Project**: TBD
 - **Local PDF**: ../pdfs/A Generalized Multiscale Bundle-Based Hyperspectral Sparse Unmixing Algorithm.pdf
-- **Datasets**: TBD
+- **Datasets**: synthetic
 - **Tags**: linear,blind,sparse,bundle,multiscale
 - **Note status**: skimmed from the local PDF metadata and abstract
 
@@ -17,12 +17,12 @@
 
 - **What it is about**: This paper studies sparse, bundle, spectral variability, multiscale for hyperspectral unmixing, centered on "A Generalized Multiscale Bundle-Based Hyperspectral Sparse Unmixing Algorithm".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
-- **Datasets used**: datasets not yet extracted.
-- **Experimental effect**: Datasets are not yet extracted; the paper is indexed with SAD/RMSE evaluation, but exact result values are not yet extracted in this survey note.
+- **Datasets used**: synthetic.
+- **Experimental effect**: On synthetic, reports best or stronger overall abundance/endmember estimation than the compared baselines (SAD/RMSE).
 
 ## One-Sentence Summary
 
-This skim note records a linear blind unmixing, sparse, bundle, spectral variability, multiscale paper and tracks its reported evaluation on datasets reported in the paper.
+This skim note records a linear blind unmixing, sparse, bundle, spectral variability, multiscale paper and tracks its reported evaluation on synthetic.
 
 ## Problem
 
@@ -37,7 +37,7 @@ The paper belongs to the linear blind hyperspectral unmixing track, where endmem
 
 ## Experiments
 
-- Datasets: TBD
+- Datasets: synthetic
 - Metrics: SAD; RMSE
 - Code status: Verified official code/project URL from the local PDF or official page.
 - Extraction note: The local PDF abstract and metadata were used for this skim note; no verbatim abstract is reproduced here.

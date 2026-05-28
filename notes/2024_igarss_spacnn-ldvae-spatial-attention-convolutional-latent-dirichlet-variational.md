@@ -18,7 +18,7 @@
 - **What it is about**: This paper studies autoencoder, NMF, attention for hyperspectral unmixing, centered on "SpACNN-LDVAE: Spatial Attention Convolutional Latent Dirichlet Variational Autoencoder for Hyperspectral Pixel Unmixing".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
 - **Datasets used**: Samson; Urban; Cuprite; HYDICE; synthetic.
-- **Experimental effect**: Evaluated on Samson; Urban; Cuprite; HYDICE; synthetic with SAD/RMSE; exact result values are not yet extracted in this survey note.
+- **Experimental effect**: On Samson; Urban; Cuprite; HYDICE; synthetic, compares with HU baselines and reports improved reconstruction, abundance, or endmember estimates (SAD/RMSE).
 
 ## One-Sentence Summary
 

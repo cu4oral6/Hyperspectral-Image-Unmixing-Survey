@@ -1,16 +1,23 @@
 dataset,scene_type,ground_truth,common_use,url,notes
-Samson,remote sensing,endmembers and abundances,classic linear unmixing benchmark,TBD,Small benchmark scene often used with three endmembers. Appears in 9 indexed paper(s).
-Jasper Ridge,remote sensing,endmembers and abundances,classic linear unmixing benchmark,TBD,Used for abundance and endmember evaluation in multiple HU papers. Appears in 7 indexed paper(s).
-Urban,remote sensing,endmembers and abundances,urban linear unmixing benchmark,TBD,Common real HSI benchmark with several material classes. Appears in 21 indexed paper(s).
-Cuprite,remote sensing,reference minerals,endmember extraction and mineral mapping,TBD,AVIRIS mineral scene widely used for HU and mineral mapping. Appears in 4 indexed paper(s).
-USGS synthetic,synthetic,endmembers and abundances,controlled synthetic HU benchmark,TBD,Uses spectra selected from the USGS spectral library. Appears in 13 indexed paper(s).
-synthetic,synthetic,endmembers and abundances,generic controlled synthetic HU experiments,TBD,Generic synthetic experiments where the paper does not name a specific synthetic dataset. Appears in 59 indexed paper(s).
-real datasets,remote sensing,varies by paper,generic real-data HU evaluation,TBD,Placeholder for papers that report real datasets without names in the current extraction. Appears in 19 indexed paper(s).
-PRISMA,remote sensing,no public abundance ground truth in listed papers,hyperspectral image synthesis and abundance-map generation,TBD,Used for blind unmixing plus diffusion/image synthesis studies. Appears in 3 indexed paper(s).
-APEX,remote sensing,varies by paper,airborne HSI unmixing benchmark,TBD,Appears in recent spectral-spatial HU evaluations. Appears in 3 indexed paper(s).
-HYDICE,remote sensing,varies by scene,real HSI benchmark,TBD,"Appears in several HU experiments, often alongside Samson/Urban/Cuprite. Appears in 1 indexed paper(s)."
-AVIRIS,remote sensing,varies by scene,airborne HSI and mineral mapping,TBD,Sensor/data family used in unmixing and mineral mapping benchmarks. Appears in 1 indexed paper(s).
-Pavia,remote sensing,varies by benchmark,urban remote-sensing benchmark,TBD,Appears in HSI classification/unmixing-related evaluations. Appears in 1 indexed paper(s).
-hyperspectral plus LiDAR,multimodal,varies by paper,multimodal unmixing with auxiliary spatial/elevation information,TBD,Used by multimodal spectral-spatial feature fusion methods. Appears in 1 indexed paper(s).
-spectral library,library,known spectral signatures,sparse/non-blind unmixing prior,TBD,External spectral-library prior used by sparse and semi-supervised methods. Appears in 1 indexed paper(s).
+synthetic,synthetic,endmembers and abundances,generic controlled synthetic HU experiments,TBD,Generic synthetic experiments where the paper does not name a specific synthetic dataset. Appears in 68 indexed paper(s).
+Urban,remote sensing,endmembers and abundances,urban linear unmixing benchmark,TBD,Common real HSI benchmark with several material classes. Appears in 27 indexed paper(s).
+USGS synthetic,synthetic,endmembers and abundances,controlled synthetic HU benchmark,TBD,Uses spectra selected from the USGS spectral library. Appears in 16 indexed paper(s).
+Samson,remote sensing,endmembers and abundances,classic linear unmixing benchmark,TBD,Small benchmark scene often used with three endmembers. Appears in 13 indexed paper(s).
+Jasper Ridge,remote sensing,endmembers and abundances,classic linear unmixing benchmark,TBD,Used for abundance and endmember evaluation in many HU papers. Appears in 11 indexed paper(s).
+real datasets,remote sensing,varies by paper,generic real-scene HU evaluation,TBD,Generic real-data benchmark group when the current note does not name every scene. Appears in 18 indexed paper(s).
+Cuprite,remote sensing,reference minerals,endmember extraction and mineral mapping,TBD,AVIRIS mineral scene widely used for HU and mineral mapping. Appears in 6 indexed paper(s).
+APEX,remote sensing,varies by paper,airborne HSI unmixing benchmark,TBD,Appears in recent spectral-spatial HU evaluations. Appears in 5 indexed paper(s).
+PRISMA,remote sensing,no public abundance ground truth in listed papers,hyperspectral image synthesis and abundance-map generation,TBD,Used for blind unmixing plus diffusion/image synthesis studies. Appears in 4 indexed paper(s).
 auxiliary data,auxiliary,varies by paper,unmixing with external side information,TBD,Generic auxiliary data entry for papers needing later refinement. Appears in 1 indexed paper(s).
+AVIRIS,remote sensing,varies by scene,airborne HSI and mineral mapping,TBD,Sensor/data family used in unmixing and mineral mapping benchmarks. Appears in 1 indexed paper(s).
+DLR HySU,remote sensing,reference abundances in listed experiment,spectral-variability unmixing experiment,TBD,DLR HySU subimage used for controlled variability experiments. Appears in 1 indexed paper(s).
+HYDICE,remote sensing,varies by scene,real HSI benchmark,TBD,"Appears in several HU experiments, often alongside classic HU datasets. Appears in 1 indexed paper(s)."
+hyperspectral plus LiDAR,multimodal,varies by paper,multimodal unmixing with auxiliary spatial/elevation information,TBD,Used by multimodal spectral-spatial feature fusion methods. Appears in 1 indexed paper(s).
+MUUFL,remote sensing,varies by benchmark,urban hyperspectral benchmark,TBD,Urban HSI scene used in recent HU evaluations. Appears in 1 indexed paper(s).
+Pavia,remote sensing,varies by benchmark,urban remote-sensing benchmark,TBD,Appears in HSI classification/unmixing-related evaluations. Appears in 1 indexed paper(s).
+Ray-Tracing,synthetic,endmembers and abundances,physics/rendering-based HU benchmark,TBD,Synthetic ray-tracing scene used to test spatial-spectral unmixing. Appears in 1 indexed paper(s).
+spectral library,library,known spectral signatures,sparse/non-blind unmixing prior,TBD,External spectral-library prior used by sparse and semi-supervised methods. Appears in 1 indexed paper(s).
+synthetic multi-source experiments,synthetic,endmembers and abundances,multi-source HSI synthesis/fusion benchmark,TBD,Synthetic multi-source experiments for unmixing-before-fusion evaluation. Appears in 1 indexed paper(s).
+synthetic numerical SCA/NCA tests,synthetic,known simulated factors,minimum-volume factorization benchmark,TBD,Numerical tests for SCA/NCA optimization rather than a named HSI scene. Appears in 1 indexed paper(s).
+synthetic SCA/NCA tests,synthetic,known simulated factors,minimum-volume factorization benchmark,TBD,Numerical tests for SCA/NCA optimization rather than a named HSI scene. Appears in 1 indexed paper(s).
+synthetic numerical experiments,remote sensing,varies by paper,synthetic numerical HU evaluation,TBD,Dataset captured from indexed paper metadata. Appears in 1 indexed paper(s).

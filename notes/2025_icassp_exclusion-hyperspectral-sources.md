@@ -18,7 +18,7 @@
 - **What it is about**: This paper studies graph for hyperspectral unmixing, centered on "On the Exclusion of Hyperspectral Sources".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
 - **Datasets used**: synthetic.
-- **Experimental effect**: Evaluation is indexed on synthetic; exact metrics and result values still need extraction.
+- **Experimental effect**: On synthetic, reports best or stronger overall abundance/endmember estimation than the compared baselines (SAD/RMSE/MSE/SRE).
 
 ## One-Sentence Summary
 

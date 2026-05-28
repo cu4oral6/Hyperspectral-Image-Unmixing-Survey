@@ -9,7 +9,7 @@
 - **Code**: https://hsi-synthesis.github.io/
 - **Project**: https://hsi-synthesis.github.io/
 - **Local PDF**: ../pdfs/Unmixing Before Fusion A Generalized Paradigm for Multi-Source-Based Hyperspectral Image Synthesis.pdf
-- **Datasets**: synthetic
+- **Datasets**: synthetic multi-source experiments
 - **Tags**: linear,blind
 - **Note status**: skimmed from the local PDF metadata and abstract
 
@@ -17,8 +17,8 @@
 
 - **What it is about**: This paper studies linear blind hyperspectral unmixing for hyperspectral unmixing, centered on "Unmixing Before Fusion: A Generalized Paradigm for Multi-Source-Based Hyperspectral Image Synthesis".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
-- **Datasets used**: synthetic.
-- **Experimental effect**: Evaluated on synthetic with SAD/RMSE; exact result values are not yet extracted in this survey note.
+- **Datasets used**: synthetic multi-source experiments.
+- **Experimental effect**: Synthetic multi-source experiments: reports improved fusion/synthesis quality when unmixing is performed before multi-source fusion.
 
 ## One-Sentence Summary
 
@@ -37,7 +37,7 @@ The paper belongs to the linear blind hyperspectral unmixing track, where endmem
 
 ## Experiments
 
-- Datasets: synthetic
+- Datasets: synthetic multi-source experiments
 - Metrics: SAD; RMSE
 - Code status: Verified official code/project URL from the local PDF or official page.
 - Extraction note: The local PDF abstract and metadata were used for this skim note; no verbatim abstract is reproduced here.

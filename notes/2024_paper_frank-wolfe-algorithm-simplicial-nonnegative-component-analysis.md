@@ -9,7 +9,7 @@
 - **Code**: TBD
 - **Project**: TBD
 - **Local PDF**: ../pdfs/Frank-Wolfe Algorithm for Simplicial and Nonnegative Component Analysis.pdf
-- **Datasets**: TBD
+- **Datasets**: synthetic SCA/NCA tests
 - **Tags**: linear,blind,nmf
 - **Note status**: skimmed from the local PDF metadata and abstract
 
@@ -17,12 +17,12 @@
 
 - **What it is about**: This paper studies NMF for hyperspectral unmixing, centered on "Frank-Wolfe Algorithm for Simplicial and Nonnegative Component Analysis".
 - **Is it linear blind unmixing?** Yes. In this survey taxonomy it is treated as linear blind unmixing because it estimates endmembers and abundances from the HSI without supplied endmember spectra under a linear/reconstruction-based unmixing setup.
-- **Datasets used**: datasets not yet extracted.
-- **Experimental effect**: Experiment datasets, metrics, and result values still need extraction from the paper.
+- **Datasets used**: synthetic SCA/NCA tests.
+- **Experimental effect**: Synthetic SCA/NCA experiments: reports competitive minimum-volume factorization behavior using a Frank-Wolfe solver.
 
 ## One-Sentence Summary
 
-This skim note records a linear blind unmixing, NMF paper and tracks its reported evaluation on datasets reported in the paper.
+This skim note records a linear blind unmixing, NMF paper and tracks its reported evaluation on synthetic SCA/NCA tests.
 
 ## Problem
 
@@ -37,7 +37,7 @@ The paper belongs to the linear blind hyperspectral unmixing track, where endmem
 
 ## Experiments
 
-- Datasets: TBD
+- Datasets: synthetic SCA/NCA tests
 - Metrics: TBD
 - Code status: TBD; no official code URL was found in the local PDF or quick verification pass.
 - Extraction note: The local PDF abstract and metadata were used for this skim note; no verbatim abstract is reproduced here.
