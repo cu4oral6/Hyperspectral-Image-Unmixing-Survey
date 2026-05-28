@@ -26,14 +26,23 @@
 
 ## 目录
 
-- [问题定义](#问题定义)
-- [方法分类](#方法分类)
-- [论文](#论文)
-- [数据集](#数据集)
-- [实验记录](#实验记录)
-- [阅读笔记](#阅读笔记)
-- [有用链接](#有用链接)
-- [维护方式](#维护方式)
+- [高光谱图像解混论文整理](#高光谱图像解混论文整理)
+  - [动态](#动态)
+  - [目录](#目录)
+  - [问题定义](#问题定义)
+  - [方法分类](#方法分类)
+  - [论文](#论文)
+    - [线性盲解混](#线性盲解混)
+    - [线性非盲 / 半盲解混](#线性非盲--半盲解混)
+    - [非线性盲解混](#非线性盲解混)
+    - [非线性非盲 / 半盲解混](#非线性非盲--半盲解混)
+    - [混合模型 / 跨模型解混](#混合模型--跨模型解混)
+    - [综述、基准、数据集与工具](#综述基准数据集与工具)
+  - [数据集](#数据集)
+  - [实验记录](#实验记录)
+  - [阅读笔记](#阅读笔记)
+  - [有用链接](#有用链接)
+  - [维护方式](#维护方式)
 
 ## 问题定义
 
@@ -66,7 +75,7 @@ Y = AS + N
 |---:|---|---|---|---|---|
 | 2026 | [A Hyperspectral Unmixing Method Based on Matrix Spiral Scanning Mamba](https://doi.org/10.1109/ICAACE69793.2026.11508730) | 2026 9th International Conference on Advanced Algorithms and Control Engineering (ICAACE) | 线性盲解混; Mamba; 状态空间模型; 螺旋扫描 | TBD | [中文笔记](notes/zh-CN/2026_icaace_matrix-spiral-scanning-mamba.md) |
 | 2026 | [GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing](https://doi.org/10.1109/TGRS.2026.3668181) | IEEE Transactions on Geoscience and Remote Sensing | 线性盲解混; Transformer; 图正则; 注意力 | TBD | [中文笔记](notes/zh-CN/2026_tgrs_ggct-net-dual-branch-gated-graph-convolution-grouped.md) |
-| 2026 | [Hyperspectral Image Synthesis Through Blind Unmixing Dictionary and Deep Diffusion Models](https://doi.org/10.1109/LGRS.2025.3646054) | IEEE Geoscience and Remote Sensing Letters, vol. 23 | 线性盲解混; 深度生成式解混; 图像合成 | [GitHub](https://github.com/martinapastorino/HSI_DDPM) | [中文笔记](notes/zh-CN/2026_grsl_hyperspectral-image-synthesis-through-blind-unmixing-dictionary-and-deep-diffusion-models.md) |
+| 2026 | [Hyperspectral Image Synthesis Through Blind Unmixing Dictionary and Deep Diffusion Models](https://doi.org/10.1109/LGRS.2025.3646054) | IEEE Geoscience and Remote Sensing Letters, vol. 23 | 线性盲解混; 深度生成式解混; 图像合成；主要讲difussion生成图像 | [GitHub](https://github.com/martinapastorino/HSI_DDPM) | [中文笔记](notes/zh-CN/2026_grsl_hyperspectral-image-synthesis-through-blind-unmixing-dictionary-and-deep-diffusion-models.md) |
 | 2026 | [Hyperspectral Unmixing Using Frequency-Adaptive Convolutional-Mamba Network](https://doi.org/10.1109/JSTARS.2026.3677880) | IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing | 线性盲解混; Mamba; 光谱变异 | [GitHub](https://github.com/flyzzie/FACM) | [中文笔记](notes/zh-CN/2026_jstars_hyperspectral-unmixing-frequency-adaptive-convolutional-mamba-network.md) |
 | 2026 | [MS^2AE-Net: A Multiscale Spectral-Spatial Autoencoder Network for Hyperspectral Unmixing](https://doi.org/10.1109/TGRS.2026.3662051) | IEEE Transactions on Geoscience and Remote Sensing | 线性盲解混; 自编码器; 多尺度 | TBD | [中文笔记](notes/zh-CN/2026_tgrs_ms2ae-net-multiscale-spectral-spatial-autoencoder-network-hyperspectral.md) |
 | 2026 | [Physics-Guided Vision Transformer Network With Tokens Complementarity for Hyperspectral Unmixing](https://doi.org/10.1109/TGRS.2026.3676520) | IEEE Transactions on Geoscience and Remote Sensing | 线性盲解混; Transformer; 张量; 展开网络 | TBD | [中文笔记](notes/zh-CN/2026_tgrs_physics-guided-vision-transformer-network-tokens-complementarity-hyperspectral.md) |
