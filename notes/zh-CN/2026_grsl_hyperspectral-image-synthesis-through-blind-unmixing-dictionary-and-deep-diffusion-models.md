@@ -10,6 +10,7 @@
 - **本地 PDF**：../../pdfs/Hyperspectral_Image_Synthesis_Through_Blind_Unmixing_Dictionary_and_Deep_Diffusion_Models.pdf
 - **数据集**：PRISMA，覆盖 Mexico、Spain、Italy 的多类地表场景
 - **标签**：deep, diffusion, blind, unmixing-dictionary, image-synthesis, PRISMA
+- **相关早期版本**：Deep Diffusion Models and Unsupervised Hyperspectral Unmixing for Realistic Abundance Map Synthesis，CVPRW 2025，DOI：https://doi.org/10.1109/CVPRW67362.2025.00286
 
 ## 一句话总结
 
@@ -51,6 +52,10 @@
 - 如果关注“解混 + 扩散模型 + 高光谱数据生成”，这篇可以作为关键论文。
 - 适合用于 synthetic HSI generation、数据增强、传感器仿真等方向的文献入口。
 
+## 去重说明
+
+CVPRW 2025 论文可视为早期 workshop 版本，重点是丰度图合成。当前主列表保留 2026 GRSL 版本，因为它扩展到完整高光谱图像合成，并提供官方代码链接。
+
 ## BibTeX
 
 ```bibtex
@@ -63,4 +68,3 @@
   doi={10.1109/LGRS.2025.3646054}
 }
 ```
-

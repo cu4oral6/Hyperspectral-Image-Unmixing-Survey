@@ -10,6 +10,7 @@
 - **Local PDF**: ../pdfs/Hyperspectral_Image_Synthesis_Through_Blind_Unmixing_Dictionary_and_Deep_Diffusion_Models.pdf
 - **Datasets**: PRISMA imagery over Mexico, Spain, and Italy
 - **Tags**: deep, diffusion, blind, unmixing-dictionary, image-synthesis, PRISMA
+- **Related earlier version**: "Deep Diffusion Models and Unsupervised Hyperspectral Unmixing for Realistic Abundance Map Synthesis", CVPRW 2025, DOI: https://doi.org/10.1109/CVPRW67362.2025.00286
 
 ## One-Sentence Summary
 
@@ -51,6 +52,10 @@ Direct hyperspectral image synthesis is difficult because HS data are high-dimen
 - Good key paper for the intersection of HS unmixing and diffusion-based data generation.
 - Useful if the project needs synthetic HSI generation, data augmentation, or sensor simulation.
 
+## Deduplication Note
+
+The CVPRW 2025 paper is treated as an earlier workshop version focused on realistic abundance-map synthesis. This 2026 GRSL paper is kept as the main entry because it extends the pipeline to full hyperspectral image synthesis and provides the official code link.
+
 ## BibTeX
 
 ```bibtex
@@ -63,4 +68,3 @@ Direct hyperspectral image synthesis is difficult because HS data are high-dimen
   doi={10.1109/LGRS.2025.3646054}
 }
 ```
-

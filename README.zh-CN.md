@@ -14,13 +14,13 @@
   <a href="#论文">论文</a> |
   <a href="#数据集">数据集</a> |
   <a href="#实验记录">实验记录</a> |
-  <a href="#阅读笔记">阅读笔记</a> |
-  <a href="#维护方式">维护方式</a>
+  <a href="#阅读笔记">阅读笔记</a>
 </p>
 
 ## 动态
 
-- **2026-05-28**：添加 3 篇本地 PDF 的论文信息、DOI、代码链接和中文阅读笔记。
+- **2026-05-28**：去除主列表中的重复/版本迭代论文，并按线性/非线性、盲/非盲解混重新分类。
+- **2026-05-28**：添加本地论文元数据、DOI、双语笔记和实验记录。
 - **2026-05-27**：创建高光谱图像解混论文整理仓库骨架。
 
 ## 目录
@@ -42,47 +42,71 @@
 Y = AS + N
 ```
 
-其中 `Y` 表示观测到的高光谱数据，`A` 表示端元矩阵，`S` 表示丰度矩阵，`N` 表示噪声或建模误差。实际解混任务通常还需要处理非线性混合、端元光谱变异、空间结构、稀疏先验、噪声退化以及真实标注不足等问题。
+其中 `Y` 表示观测到的高光谱数据，`A` 表示端元矩阵，`S` 表示丰度矩阵，`N` 表示噪声或建模误差。
 
 ## 方法分类
 
-- **经典优化方法**：NMF、稀疏回归、单纯形/几何方法、贝叶斯模型。
-- **空间-光谱先验**：总变分、图正则、低秩建模、超像素先验。
-- **非线性解混**：核方法、双线性/多线性模型、物理启发的非线性模型。
-- **深度解混**：自编码器、CNN、Transformer、展开网络、自监督方法。
-- **盲解混 / 无监督解混**：不依赖已知端元或丰度标注。
-- **光谱变异建模**：端元束、变异感知字典、域适应。
-- **鲁棒解混**：噪声、损坏、低信噪比或混合退化场景。
-- **评测与基准**：合成数据、真实数据集、可复现实验协议。
+本仓库采用四类主分类：
+
+- **线性盲解混**：基于线性混合模型，端元和丰度均从图像中估计，不预先给定端元光谱。
+- **线性非盲解混**：基于线性混合模型，端元、光谱库或其他材料先验由外部提供。
+- **非线性盲解混**：基于非线性混合模型，端元和丰度均未知并从数据中估计。
+- **非线性非盲解混**：基于非线性混合模型，同时使用已知端元、光谱库或外部材料先验。
+
+二级标签继续记录 NMF、稀疏回归、贝叶斯推断、图正则、自编码器、扩散模型、Transformer、光谱变异、benchmark 等方法族。
 
 ## 论文
 
-完整论文数据库维护在 [data/papers.csv](data/papers.csv)。本 README 只保留精选列表和快速入口。
+完整论文数据库维护在 [data/papers.csv](data/papers.csv)。重复文件和版本迭代论文按 DOI/标题折叠；早期版本记录在对应完整版本的笔记中。
 
-### 2026
+### 线性盲解混
 
-| 标题 | 发表 venue | 任务 | 代码 | 笔记 |
-|---|---|---|---|---|
-| [Hyperspectral Image Synthesis Through Blind Unmixing Dictionary and Deep Diffusion Models](https://doi.org/10.1109/LGRS.2025.3646054) | IEEE GRSL | 基于盲解混字典和扩散模型的高光谱图像合成 | [GitHub](https://github.com/martinapastorino/HSI_DDPM) | [中文笔记](notes/zh-CN/2026_grsl_hyperspectral-image-synthesis-through-blind-unmixing-dictionary-and-deep-diffusion-models.md) |
+| 年份 | 标题 | Venue | 方法 | 代码 | 笔记 |
+|---:|---|---|---|---|---|
+| 2026 | [Hyperspectral Image Synthesis Through Blind Unmixing Dictionary and Deep Diffusion Models](https://doi.org/10.1109/LGRS.2025.3646054) | IEEE Geoscience and Remote Sensing Letters, vol. 23 | 盲线性解混字典 + 扩散模型；图像合成 | [GitHub](https://github.com/martinapastorino/HSI_DDPM) | [中文笔记](notes/zh-CN/2026_grsl_hyperspectral-image-synthesis-through-blind-unmixing-dictionary-and-deep-diffusion-models.md) |
+| 2025 | [A Spectral-Spatial Attention Network for Hyperspectral Unmixing](https://doi.org/10.1109/TGRS.2025.3576479) | IEEE Transactions on Geoscience and Remote Sensing, vol. 63 | linear blind unmixing; spectral-spatial attention; denoising | TBD | TBD |
+| 2025 | [Hyperspectral Blind Unmixing via First-Order Graph-Guided Sparse Nonnegative Matrix Factorization](https://doi.org/10.1109/ICVISP68610.2025.11451711) | 9th International Conference on Vision, Image and Signal Processing (ICVISP) | 一阶图引导稀疏 NMF | TBD | [中文笔记](notes/zh-CN/2025_icvisp_hyperspectral-blind-unmixing-via-fog-snmf.md) |
+| 2025 | [Integrating Recurrent-KAN With SAM Adapter for Blind Hyperspectral Unmixing](https://doi.org/10.1109/TGRS.2025.3635216) | IEEE Transactions on Geoscience and Remote Sensing, vol. 63 | linear blind unmixing; Recurrent-KAN; SAM adapter | TBD | TBD |
+| 2025 | [Noise-to-Abundance Translation: Unsupervised Hyperspectral Unmixing Based on Diffusion Models](https://doi.org/10.1109/TGRS.2025.3582029) | IEEE Transactions on Geoscience and Remote Sensing, vol. 63 | linear blind unmixing; diffusion model; autoencoder | TBD | TBD |
+| 2025 | [Unrolling Plug-and-Play Network for Hyperspectral Unmixing](https://doi.org/10.1109/TGRS.2025.3540992) | IEEE Transactions on Geoscience and Remote Sensing, vol. 63 | linear blind unmixing; unrolled plug-and-play network | TBD | TBD |
+| 2024 | [Blind Unmixing Using Dispersion Model-Based Autoencoder to Address Spectral Variability](https://doi.org/10.1109/TGRS.2024.3399003) | IEEE Transactions on Geoscience and Remote Sensing, vol. 62 | linear blind unmixing; dispersion model; spectral variability; two-stream autoencoder | TBD | TBD |
+| 2024 | [MAT-Net: Multiscale Aggregation Transformer Network for Hyperspectral Unmixing](https://doi.org/10.1109/TGRS.2024.3494795) | IEEE Transactions on Geoscience and Remote Sensing, vol. 62 | linear blind unmixing; multiscale aggregation transformer | TBD | TBD |
+| 2024 | [Unidirectional Local-Attention Autoencoder Network for Spectral Variability Unmixing](https://doi.org/10.1109/TGRS.2024.3375598) | IEEE Transactions on Geoscience and Remote Sensing, vol. 62 | linear blind unmixing; spectral variability; local-attention autoencoder | TBD | TBD |
+| 2024 | [UnmixDiff: Unmixing-Based Diffusion Model for Hyperspectral Image Synthesis](https://doi.org/10.1109/TGRS.2024.3425517) | IEEE Transactions on Geoscience and Remote Sensing, vol. 62 | linear blind unmixing; unmixing-based diffusion; image synthesis | TBD | TBD |
+| 2023 | [Multiview Spatial-Spectral Two-Stream Network for Hyperspectral Image Unmixing](https://doi.org/10.1109/TGRS.2023.3237556) | IEEE Transactions on Geoscience and Remote Sensing, vol. 61 | 无监督 AE/RNN 多视角空间-光谱网络 | TBD | [中文笔记](notes/zh-CN/2023_tgrs_multiview-spatial-spectral-two-stream-network.md) |
 
-### 2025
+### 线性非盲 / 半盲解混
 
-| 标题 | 发表 venue | 任务 | 代码 | 笔记 |
-|---|---|---|---|---|
-| [Deep Diffusion Models and Unsupervised Hyperspectral Unmixing for Realistic Abundance Map Synthesis](https://doi.org/10.1109/CVPRW67362.2025.00286) | CVPRW | 基于盲解混和扩散模型的真实丰度图合成 | TBD | [中文笔记](notes/zh-CN/2025_cvprw_deep-diffusion-models-and-unsupervised-hyperspectral-unmixing.md) |
-| [Hyperspectral Blind Unmixing via First-Order Graph-Guided Sparse Nonnegative Matrix Factorization](https://doi.org/10.1109/ICVISP68610.2025.11451711) | ICVISP | 一阶图引导稀疏 NMF 盲解混 | TBD | [中文笔记](notes/zh-CN/2025_icvisp_hyperspectral-blind-unmixing-via-fog-snmf.md) |
+| 年份 | 标题 | Venue | 方法 | 代码 | 笔记 |
+|---:|---|---|---|---|---|
+| 2025 | [Adaptive Multitask Autoencoder-Based Hyperspectral Unmixing Exploiting Auxiliary Data via Graph Associations](https://doi.org/10.1109/TGRS.2025.3551119) | IEEE Transactions on Geoscience and Remote Sensing, vol. 63 | linear unmixing with auxiliary data; adaptive multitask autoencoder; graph associations | TBD | TBD |
+| 2025 | [MSSF-Net: A Multimodal Spectral-Spatial Feature Fusion Network for Hyperspectral Unmixing](https://doi.org/10.1109/TGRS.2025.3563647) | IEEE Transactions on Geoscience and Remote Sensing, vol. 63 | linear unmixing with auxiliary modality; multimodal spectral-spatial fusion | TBD | TBD |
+| 2024 | [Diffusion-Model-Based Hyperspectral Unmixing Using Spectral Prior Distribution](https://doi.org/10.1109/TGRS.2024.3408475) | IEEE Transactions on Geoscience and Remote Sensing, vol. 62 | 光谱库先验 + 扩散模型半盲解混 | TBD | TBD |
 
-### 2024
+### 非线性盲解混
 
-| 标题 | 发表 venue | 任务 | 代码 | 笔记 |
-|---|---|---|---|---|
-| TBD | TBD | TBD | TBD | TBD |
+| 年份 | 标题 | Venue | 方法 | 代码 | 笔记 |
+|---:|---|---|---|---|---|
+| 2025 | [A Biobjective Model-Driven Autocoder for Blind Hyperspectral Unmixing](https://doi.org/10.1109/TGRS.2025.3577325) | IEEE Transactions on Geoscience and Remote Sensing, vol. 63 | nonlinear blind unmixing; biobjective model-driven autoencoder; kernel model | TBD | TBD |
+| 2025 | [DEAE: Diffusion-Enhanced Autoencoder Network for Unsupervised Nonlinear Hyperspectral Unmixing](https://doi.org/10.1109/TGRS.2025.3608084) | IEEE Transactions on Geoscience and Remote Sensing, vol. 63 | nonlinear blind unmixing; diffusion-enhanced autoencoder; EMLM | TBD | TBD |
+| 2024 | [DAAN: A Deep Autoencoder-Based Augmented Network for Blind Multilinear Hyperspectral Unmixing](https://doi.org/10.1109/TGRS.2024.3381632) | IEEE Transactions on Geoscience and Remote Sensing, vol. 62 | 多线性混合模型 + 增广自编码器 | TBD | TBD |
+| 2024 | [EMLM-Net: An Extended Multilinear Mixing Model-Inspired Dual-Stream Network for Unsupervised Nonlinear Hyperspectral Unmixing](https://doi.org/10.1109/TGRS.2024.3363427) | IEEE Transactions on Geoscience and Remote Sensing, vol. 62 | EMLM 启发双流网络 + ADMM 展开 | TBD | TBD |
+| 2024 | [Hyperspectral Unmixing Based on Multilinear Mixing Model Using Convolutional Autoencoders](https://doi.org/10.1109/TGRS.2024.3360714) | IEEE Transactions on Geoscience and Remote Sensing, vol. 62 | nonlinear blind unmixing; multilinear mixing model; convolutional autoencoder | TBD | TBD |
+| 2024 | [Two-Stream Autoencoder-Based Hyperspectral Unmixing Using Hapke Model](https://doi.org/10.1109/IGARSS53475.2024.10640399) | IEEE International Geoscience and Remote Sensing Symposium (IGARSS) | nonlinear blind unmixing; Hapke model; two-stream autoencoder | TBD | TBD |
 
-### 2024 年以前
+### 非线性非盲解混
 
-| 标题 | 发表 venue | 任务 | 代码 | 笔记 |
-|---|---|---|---|---|
-| TBD | TBD | TBD | TBD | TBD |
+| 年份 | 标题 | Venue | 方法 | 代码 | 笔记 |
+|---:|---|---|---|---|---|
+| TBD | TBD | TBD | TBD | TBD | TBD |
+
+### 综述与工具
+
+| 年份 | 标题 | Venue | 方法 | 代码 | 笔记 |
+|---:|---|---|---|---|---|
+| 2024 | [AE-RED: A Hyperspectral Unmixing Framework Powered by Deep Autoencoder and Regularization by Denoising](https://doi.org/10.1109/TGRS.2024.3377472) | IEEE Transactions on Geoscience and Remote Sensing, vol. 62 | blind unmixing; autoencoder; regularization by denoising; nonlinear-capable | TBD | TBD |
+| 2024 | [Hyperspectral Blind Unmixing Using a Double Deep Image Prior](https://doi.org/10.1109/TNNLS.2023.3294714) | IEEE Transactions on Neural Networks and Learning Systems, vol. 35, no. 11 | blind unmixing; double deep image prior; linear and nonlinear models | TBD | TBD |
+| 2024 | [Image Processing and Machine Learning for Hyperspectral Unmixing: An Overview and the HySUPP Python Package](https://doi.org/10.1109/TGRS.2024.3393570) | IEEE Transactions on Geoscience and Remote Sensing, vol. 62 | 综述与 HySUPP Python 工具包 | [GitHub](https://github.com/BehnoodRasti/HySUPP) | TBD |
 
 ## 数据集
 
@@ -92,6 +116,8 @@ Y = AS + N
 | Jasper Ridge | 遥感 | 端元 / 丰度 | 线性解混基准 | TBD |
 | Urban | 遥感 | 端元 / 丰度 | 线性解混基准 | TBD |
 | Cuprite | 遥感 | 参考矿物 | 端元提取 / 矿物制图 | TBD |
+| PRISMA | 遥感 | 当前条目未使用公开丰度真值 | 高光谱图像合成 / 丰度图生成 | TBD |
+| USGS synthetic | 合成数据 | 端元 / 丰度 | 受控线性解混基准 | TBD |
 
 ## 实验记录
 
@@ -117,12 +143,6 @@ Y = AS + N
 
 中文模板：[notes/zh-CN/template.md](notes/zh-CN/template.md)
 
-建议命名方式：
-
-```text
-notes/zh-CN/YYYY_venue_short-title.md
-```
-
 ## 有用链接
 
 - [All-in-One-Image-Restoration-Survey](https://github.com/Harbinzzy/All-in-One-Image-Restoration-Survey)：本仓库结构参考。
@@ -133,15 +153,7 @@ notes/zh-CN/YYYY_venue_short-title.md
 添加论文时建议：
 
 1. 在 [data/papers.csv](data/papers.csv) 添加一行。
-2. 重要或已读论文，在 `notes/` 或 `notes/zh-CN/` 添加笔记。
-3. 尽量补充 DOI、官方代码、项目主页、数据集和实验指标。
+2. 按 `mixing_model` 和 `supervision` 两个字段分类。
+3. 重要论文添加英文和中文笔记。
 4. 公开仓库中不上传出版社 PDF；优先放 DOI、arXiv、OpenReview 或作者项目页链接。
-
-推荐标签：
-
-```text
-classical, sparse, nmf, bayesian, spatial-spectral, nonlinear, deep, autoencoder,
-transformer, unfolding, self-supervised, blind, spectral-variability, robust,
-benchmark, survey
-```
 

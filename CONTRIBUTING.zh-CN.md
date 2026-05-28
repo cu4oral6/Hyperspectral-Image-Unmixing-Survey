@@ -17,7 +17,9 @@
 - `title`：论文标题。
 - `authors`：作者；快速记录时可以使用 First Author et al.
 - `venue`：期刊、会议、arXiv 或 workshop。
-- `category`：主要方法类别，例如 `deep`、`sparse`、`bayesian`、`nonlinear`。
+- `mixing_model`：混合模型类型，例如 `linear`、`nonlinear` 或 `hybrid/unclear`。
+- `supervision`：监督设定，例如 `blind`、`non-blind`、`semi-supervised` 或 `unclear`。
+- `category`：分类与主要方法类别，例如 `linear blind unmixing; graph-guided sparse NMF`。
 - `dataset`：主要使用的数据集。
 - `metrics`：主要报告的指标。
 - `doi`：DOI，不包含 `https://doi.org/` 前缀。
@@ -28,4 +30,3 @@
 - `notes_path`：本地英文笔记路径，例如 `notes/2025_tgrs_short-title.md`。
 - `status`：阅读状态，例如 `to-read`、`reading`、`read`、`skimmed`、`key-paper`。
 - `tags`：逗号分隔的标签。
-

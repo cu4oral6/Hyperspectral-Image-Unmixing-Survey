@@ -1,3 +1,4 @@
 .DS_Store
 pdfs/*.pdf
+pdfs/*.docx
 !pdfs/.gitkeep

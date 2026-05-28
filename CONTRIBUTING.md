@@ -16,7 +16,9 @@ This folder is intended as a living survey for hyperspectral image unmixing pape
 - `title`: Paper title.
 - `authors`: First author et al. is fine for quick entries.
 - `venue`: Journal, conference, arXiv, or workshop.
-- `category`: Main method family, such as `deep`, `sparse`, `bayesian`, `nonlinear`.
+- `mixing_model`: `linear`, `nonlinear`, or `hybrid/unclear`.
+- `supervision`: `blind`, `non-blind`, `semi-supervised`, or `unclear`.
+- `category`: Classification plus method family, such as `linear blind unmixing; graph-guided sparse NMF`.
 - `dataset`: Main datasets used.
 - `metrics`: Main metrics reported.
 - `doi`: DOI without the `https://doi.org/` prefix.

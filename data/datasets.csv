@@ -3,4 +3,8 @@ Samson,remote sensing,endmembers and abundances,linear unmixing benchmark,TBD,TB
 Jasper Ridge,remote sensing,endmembers and abundances,linear unmixing benchmark,TBD,TBD
 Urban,remote sensing,endmembers and abundances,linear unmixing benchmark,TBD,TBD
 Cuprite,remote sensing,reference minerals,endmember extraction and mineral mapping,TBD,TBD
-
+PRISMA,remote sensing,no public abundance ground truth in listed papers,hyperspectral image synthesis and abundance-map generation,TBD,Used by Pastorino et al. for blind unmixing plus diffusion generation
+USGS synthetic,synthetic,endmembers and abundances,controlled linear unmixing benchmark,TBD,Uses spectra selected from the USGS spectral library
+synthetic,synthetic,endmembers and abundances,controlled HU benchmark,TBD,Used generically where papers report synthetic benchmarks without a specific named dataset
+real datasets,remote sensing,varies by paper,real-data HU evaluation,TBD,Placeholder for paper-specific real datasets when names need follow-up extraction
+hyperspectral plus LiDAR,multimodal,varies by paper,multimodal unmixing with auxiliary spatial/elevation information,TBD,Used by multimodal spectral-spatial feature fusion methods
