@@ -3,3 +3,6 @@ Hyperspectral Blind Unmixing via First-Order Graph-Guided Sparse Nonnegative Mat
 Hyperspectral Blind Unmixing via First-Order Graph-Guided Sparse Nonnegative Matrix Factorization,USGS synthetic,5,RMSE,0.0791 / 0.0612 / 0.0224,"FoG-SNMF at SNR 10 / 20 / 30 dB; lower is better"
 Hyperspectral Blind Unmixing via First-Order Graph-Guided Sparse Nonnegative Matrix Factorization,Samson,3,Mean SAD,0.0506,"FoG-SNMF; endmembers: rock / tree / water"
 Hyperspectral Blind Unmixing via First-Order Graph-Guided Sparse Nonnegative Matrix Factorization,Samson,3,RMSE,0.2270,"FoG-SNMF; endmembers: rock / tree / water"
+A Hyperspectral Unmixing Method Based on Matrix Spiral Scanning Mamba,Jasper Ridge,4,Mean SAD,0.046 +/- 0.0018,"SUMamba/Ours; lower is better; endmembers: soil / tree / water / road"
+A Hyperspectral Unmixing Method Based on Matrix Spiral Scanning Mamba,Jasper Ridge,4,RMSE,0.061 +/- 0.0032,"SUMamba/Ours; lower is better; abundance estimation on Jasper Ridge"
+A Hyperspectral Unmixing Method Based on Matrix Spiral Scanning Mamba,Jasper Ridge,4,SAD by endmember,0.056 / 0.050 / 0.031 / 0.046,"SUMamba/Ours; soil / tree / water / road"

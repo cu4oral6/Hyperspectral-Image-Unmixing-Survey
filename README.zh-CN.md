@@ -64,7 +64,7 @@ Y = AS + N
 
 | 年份 | 标题 | 出版源 | 方法 | 代码 | 笔记 |
 |---:|---|---|---|---|---|
-| 2026 | [A Hyperspectral Unmixing Method Based on Matrix Spiral Scanning Mamba](https://doi.org/10.1109/ICAACE69793.2026.11508730) | TBD | 线性盲解混; Mamba | TBD | TBD |
+| 2026 | [A Hyperspectral Unmixing Method Based on Matrix Spiral Scanning Mamba](https://doi.org/10.1109/ICAACE69793.2026.11508730) | 2026 9th International Conference on Advanced Algorithms and Control Engineering (ICAACE) | 线性盲解混; Mamba; 螺旋扫描 | TBD | [中文笔记](notes/zh-CN/2026_icaace_matrix-spiral-scanning-mamba.md) |
 | 2026 | [GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing](https://doi.org/10.1109/TGRS.2026.3668181) | IEEE Transactions on Geoscience and Remote Sensing | 线性盲解混; Transformer; 图正则; 注意力 | TBD | TBD |
 | 2026 | [Hyperspectral Image Synthesis Through Blind Unmixing Dictionary and Deep Diffusion Models](https://doi.org/10.1109/LGRS.2025.3646054) | IEEE Geoscience and Remote Sensing Letters, vol. 23 | 线性盲解混; 深度生成式解混; 图像合成 | [GitHub](https://github.com/martinapastorino/HSI_DDPM) | [中文笔记](notes/zh-CN/2026_grsl_hyperspectral-image-synthesis-through-blind-unmixing-dictionary-and-deep-diffusion-models.md) |
 | 2026 | [Hyperspectral Unmixing Using Frequency-Adaptive Convolutional-Mamba Network](https://doi.org/10.1109/JSTARS.2026.3677880) | IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing | 线性盲解混; Mamba; 光谱变异 | TBD | TBD |
@@ -264,7 +264,7 @@ Y = AS + N
 
 ## 实验记录
 
-实验结果维护在 [data/基准s.csv](data/基准s.csv)。
+实验结果维护在 [data/benchmarks.csv](data/benchmarks.csv)。
 
 | 论文 | 数据集 | 端元数 | 指标 | 结果 | 协议说明 |
 |---|---|---:|---|---:|---|
@@ -272,6 +272,9 @@ Y = AS + N
 | FoG-SNMF | USGS synthetic | 5 | RMSE | 0.0791 / 0.0612 / 0.0224 | SNR 10 / 20 / 30 dB |
 | FoG-SNMF | Samson | 3 | Mean SAD | 0.0506 | rock / tree / water |
 | FoG-SNMF | Samson | 3 | RMSE | 0.2270 | rock / tree / water |
+| SUMamba | Jasper Ridge | 4 | Mean SAD | 0.046 +/- 0.0018 | soil / tree / water / road |
+| SUMamba | Jasper Ridge | 4 | RMSE | 0.061 +/- 0.0032 | 丰度估计 |
+| SUMamba | Jasper Ridge | 4 | SAD by endmember | 0.056 / 0.050 / 0.031 / 0.046 | soil / tree / water / road |
 
 常见指标：
 
