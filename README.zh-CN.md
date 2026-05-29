@@ -19,7 +19,7 @@
 
 ## 动态
 
-- **2026-05-29**：处理 13 个新增 PDF，新增 5 篇核心解混/验证条目、10 篇双语笔记，并同步数据集与实验记录。
+- **2026-05-29**：处理 21 个新增 PDF，新增 6 篇核心解混条目、12 篇双语笔记，并同步 skipped 与 inventory。
 - **2026-05-28**：盘点 229 个本地 PDF，整理为 161 篇唯一收录论文，并新增 inventory 与 skipped 审核表。
 - **2026-05-28**：去除主列表中的重复/版本迭代论文，并按线性/非线性、盲/非盲解混重新分类。
 - **2026-05-28**：添加本地论文元数据、DOI、双语笔记和实验记录。
@@ -68,12 +68,16 @@ Y = AS + N
 
 ## 论文
 
-完整论文数据库维护在 [data/papers.csv](data/papers.csv)。本次从本地 `pdfs/` 文件夹索引了 **166 篇唯一收录论文**。重复文件按 DOI/标题折叠；未纳入主表的相关应用论文记录在 [data/skipped.csv](data/skipped.csv)，完整 PDF 盘点在 [data/pdf_inventory.csv](data/pdf_inventory.csv)。
+完整论文数据库维护在 [data/papers.csv](data/papers.csv)。本次从本地 `pdfs/` 文件夹索引了 **172 篇唯一收录论文**。重复文件按 DOI/标题折叠；未纳入主表的相关应用论文记录在 [data/skipped.csv](data/skipped.csv)，完整 PDF 盘点在 [data/pdf_inventory.csv](data/pdf_inventory.csv)。
 
 ### 线性盲解混
 
 | 年份 | 标题 | 出版源 | 方法 | 代码 | 实验效果 | 笔记 |
 | ---: | --- | --- | --- | --- | --- | --- |
+| 2026 | [Blind Hyperspectral Unmixing With Integrated Nonsmooth and CEM Spatial Constraints](https://doi.org/10.1109/JSTARS.2026.3678308) | IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing | 线性盲解混; NMF; 端元非光滑约束; CEM 空间稀疏正则 | TBD | 合成和真实 HSI：论文报告在噪声下端元/丰度估计更鲁棒，指标包括 SAD/RMSE。 | [中文笔记](notes/zh-CN/2026_jstars_blind-hyperspectral-unmixing-integrated-nonsmooth-cem-spatial.md) |
+| 2026 | [Conic Hull Fitting-Based Dictionary Matrix Learning for Nonnegative Matrix Factorization](https://doi.org/10.1109/TSMC.2026.3655184) | IEEE Transactions on Systems, Man, and Cybernetics: Systems | 线性盲解混; NMF; 锥包拟合; 字典学习 | TBD | 合成和真实 NMF 任务（含 HU）：面向纯像元/1-sparse 假设较弱的非可分情形。 | [中文笔记](notes/zh-CN/2026_tsmc_conic-hull-fitting-dictionary-matrix-learning-nmf.md) |
+| 2026 | [EMT-HEE: An Evolutionary Multi-Tasking Method for Hyperspectral Endmember Extraction](https://doi.org/10.1109/TETCI.2025.3634746) | IEEE Transactions on Emerging Topics in Computational Intelligence | 线性盲解混; 端元提取; 进化多任务 | TBD | 合成和真实 HSI：通过主任务/辅助任务进化搜索提升端元提取质量。 | [中文笔记](notes/zh-CN/2026_tetci_emt-hee-evolutionary-multitasking-hyperspectral-endmember-extraction.md) |
+| 2026 | [MS2ANet: A Multiscale Spatial-Spectrum Agent Attention Network for Crop Hyperspectral Image Unmixing](https://doi.org/10.1109/TGRS.2026.3687879) | IEEE Transactions on Geoscience and Remote Sensing | 线性盲解混; 多尺度空洞卷积; spatial-spectrum agent attention; 作物解混 | TBD | 作物 HSI 与 HU 场景：论文报告边界敏感的作物/背景丰度估计更强，指标包括 SAD/RMSE。 | [中文笔记](notes/zh-CN/2026_tgrs_ms2anet-multiscale-spatial-spectrum-agent-attention-crop-hu.md) |
 | 2026 | [A Hyperspectral Unmixing Method Based on Matrix Spiral Scanning Mamba](https://doi.org/10.1109/ICAACE69793.2026.11508730) | 2026 9th International Conference on Advanced Algorithms and Control Engineering (ICAACE) | 线性盲解混; Mamba; 状态空间模型; 螺旋扫描 | TBD | Jasper Ridge：Mean SAD 0.046 +/- 0.0018，RMSE 0.061 +/- 0.0032；已抽取表中最优。 | [中文笔记](notes/zh-CN/2026_icaace_matrix-spiral-scanning-mamba.md) |
 | 2026 | [GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing](https://doi.org/10.1109/TGRS.2026.3668181) | IEEE Transactions on Geoscience and Remote Sensing | LMM 约束的深度盲解混; G-GCN; GCA-Transformer; 门控注意力 | TBD | Simulated/Jasper/Samson/APEX/Ray-Tracing：Proposed 平均 aRMSE/aSAD/SRE 分别为 0.06831/0.02848/23.29、0.06039/0.06447/19.7、0.06113/0.05348/20.32、0.1091/0.07947/17.32、0.15945/0.07432/18.48；Cuprite 无真实丰度图。 | [中文笔记](notes/zh-CN/2026_tgrs_ggct-net-dual-branch-gated-graph-convolution-grouped.md) |
 | 2026 | [MCDB-Net: Multiview Collaborative Dual-Branch Unmixing Network for Hyperspectral Images](https://doi.org/10.1109/TGRS.2026.3672192) | IEEE Transactions on Geoscience and Remote Sensing | 线性盲解混; 自编码器; 多视角学习; 双分支网络; 光谱注意力 | TBD | synthetic、Jasper Ridge、Samson、Cuprite：论文报告噪声鲁棒性更强，整体 SAD/RMSE 优于或达到最佳，其中 Jasper Ridge mean SAD 提升 1.46 个百分点。 | [中文笔记](notes/zh-CN/2026_tgrs_mcdb-net-multiview-collaborative-dual-branch.md) |
@@ -168,6 +172,7 @@ Y = AS + N
 
 | 年份 | 标题 | 出版源 | 方法 | 代码 | 笔记 |
 |---:|---|---|---|---|---|
+| 2026 | [Hyperspectral Sparse Unmixing via Joint Robust Spatial Priors and Weighted Total Variation Regularization](https://doi.org/10.1109/JSTARS.2026.3668120) | IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing | 线性半盲/非盲解混; 稀疏解混; 鲁棒空间先验; 加权 TV | TBD | [中文笔记](notes/zh-CN/2026_jstars_hyperspectral-sparse-unmixing-joint-robust-spatial-priors-weighted-tv.md) |
 | 2026 | [A Multiscale Synergistic Attention Network With Initialized Endmembers for Hyperspectral Unmixing](https://doi.org/10.1109/LGRS.2026.3672340) | IEEE Geoscience and Remote Sensing Letters | 线性半盲/非盲解混; 自编码器; 注意力; 多尺度 | TBD | TBD |
 | 2026 | [Endmember Selection With Adaptive Double Prior Model](https://doi.org/10.1109/TGRS.2026.3664867) | IEEE Transactions on Geoscience and Remote Sensing | 线性半盲/非盲解混; 稀疏解混; 自适应双先验; 端元选择 | [GitHub](https://github.com/spdelphi/Double-Prior) | USGS synthetic、Cuprite、Urban、Jasper Ridge、Samson：先验误差实验中 SRE/RMSE 多数最优或次优，真实场景丰度图更稳健。 [中文笔记](notes/zh-CN/2026_tgrs_endmember-selection-adaptive-double-prior-model.md) |
 | 2025 | [A New Fast Sparse Unmixing Algorithm Based on Adaptive Spectral Library Pruning and Nesterov Optimization](https://doi.org/10.1109/JSTARS.2025.3541257) | IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing | 线性半盲/非盲解混; 稀疏; 图正则; 注意力 | TBD | TBD |
@@ -245,6 +250,7 @@ Y = AS + N
 
 | 年份 | 标题 | 出版源 | 方法 | 代码 | 笔记 |
 |---:|---|---|---|---|---|
+| 2026 | [Underdetermined Blind Source Separation via Weighted Simplex Shrinkage Regularization and Quantum Deep Image Prior](https://doi.org/10.1109/TIP.2026.3673957) | IEEE Transactions on Image Processing | 混合盲解混; 多光谱解混; quantum deep image prior; weighted simplex shrinkage | TBD | [中文笔记](notes/zh-CN/2026_tip_underdetermined-bss-weighted-simplex-shrinkage-quantum-dip.md) |
 | 2026 | [DTU-Net: A Multi-Scale Dilated Transformer Network for Nonlinear Hyperspectral Unmixing](https://doi.org/10.1109/TGRS.2026.3658361) | IEEE Transactions on Geoscience and Remote Sensing | 混合模型盲解混; 自编码器; Transformer; 注意力; 多尺度 | TBD | TBD |
 | 2025 | [Hybrid Linear-Nonlinear Hyperspectral Unmixing of Homogeneous Solutions](https://doi.org/10.1109/ICECER65523.2025.11401230) | TBD | 混合模型盲解混; NMF; 双线性 | TBD | TBD |
 | 2025 | [Hyperspectral Unmixing Network Based on Hybrid Spectral Variability Model](https://doi.org/10.1109/IGARSS55030.2025.11243760) | IEEE IGARSS | 混合模型盲解混; 自编码器; NMF; 稀疏; 光谱变异 | TBD | TBD |

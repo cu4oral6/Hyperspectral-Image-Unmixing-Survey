@@ -19,7 +19,7 @@ An organized paper list for hyperspectral image unmixing, inspired by awesome-st
 
 ## News
 
-- **2026-05-29**: Processed 13 newly added PDFs; added 5 core HU/validation entries, 10 bilingual notes, and dataset/benchmark updates.
+- **2026-05-29**: Processed 21 newly added PDFs; added 6 core HU entries, 12 bilingual notes, and skipped-paper inventory updates.
 - **2026-05-28**: Indexed 229 local PDFs into 161 unique included papers, with inventory and skipped-paper audit tables.
 - **2026-05-28**: Deduplicated paper list and reorganized entries by linear/nonlinear and blind/non-blind unmixing.
 - **2026-05-28**: Added local paper metadata, DOI links, bilingual notes, and benchmark records.
@@ -59,12 +59,16 @@ Secondary tags track method families such as NMF, sparse regression, Bayesian in
 
 ## Papers
 
-The main editable table is in [data/papers.csv](data/papers.csv). This update indexes **166 unique included papers** from the local `pdfs/` folder. Duplicate files are collapsed by DOI/title; skipped application-adjacent files are tracked in [data/skipped.csv](data/skipped.csv), and the full PDF inventory is in [data/pdf_inventory.csv](data/pdf_inventory.csv).
+The main editable table is in [data/papers.csv](data/papers.csv). This update indexes **172 unique included papers** from the local `pdfs/` folder. Duplicate files are collapsed by DOI/title; skipped application-adjacent files are tracked in [data/skipped.csv](data/skipped.csv), and the full PDF inventory is in [data/pdf_inventory.csv](data/pdf_inventory.csv).
 
 ### Linear Blind Unmixing
 
 | Year | Title | Venue | Method | Code | Experimental Effect | Notes |
 | ---: | --- | --- | --- | --- | --- | --- |
+| 2026 | [Blind Hyperspectral Unmixing With Integrated Nonsmooth and CEM Spatial Constraints](https://doi.org/10.1109/JSTARS.2026.3678308) | IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing | linear blind unmixing; NMF; endmember nonsmoothness; CEM spatial sparse regularization | TBD | Synthetic and real HSI datasets: reports more robust endmember and abundance estimates under noise using SAD/RMSE-style metrics. | [note](notes/2026_jstars_blind-hyperspectral-unmixing-integrated-nonsmooth-cem-spatial.md) |
+| 2026 | [Conic Hull Fitting-Based Dictionary Matrix Learning for Nonnegative Matrix Factorization](https://doi.org/10.1109/TSMC.2026.3655184) | IEEE Transactions on Systems, Man, and Cybernetics: Systems | linear blind unmixing; NMF; conic hull fitting; dictionary learning | TBD | Synthetic and real NMF tasks including HU: targets nonseparable cases where pure-pixel/1-sparse assumptions are weak. | [note](notes/2026_tsmc_conic-hull-fitting-dictionary-matrix-learning-nmf.md) |
+| 2026 | [EMT-HEE: An Evolutionary Multi-Tasking Method for Hyperspectral Endmember Extraction](https://doi.org/10.1109/TETCI.2025.3634746) | IEEE Transactions on Emerging Topics in Computational Intelligence | linear blind unmixing; endmember extraction; evolutionary multitasking | TBD | Synthetic and real HSI datasets: reports higher-quality endmember extraction through a main/auxiliary evolutionary multitask design. | [note](notes/2026_tetci_emt-hee-evolutionary-multitasking-hyperspectral-endmember-extraction.md) |
+| 2026 | [MS2ANet: A Multiscale Spatial-Spectrum Agent Attention Network for Crop Hyperspectral Image Unmixing](https://doi.org/10.1109/TGRS.2026.3687879) | IEEE Transactions on Geoscience and Remote Sensing | linear blind unmixing; multiscale dilated convolution; spatial-spectrum agent attention; crop unmixing | TBD | Crop HSI and HU scenes: reports stronger boundary-aware crop/background abundance estimation with SAD/RMSE-style metrics. | [note](notes/2026_tgrs_ms2anet-multiscale-spatial-spectrum-agent-attention-crop-hu.md) |
 | 2026 | [A Hyperspectral Unmixing Method Based on Matrix Spiral Scanning Mamba](https://doi.org/10.1109/ICAACE69793.2026.11508730) | 2026 9th International Conference on Advanced Algorithms and Control Engineering (ICAACE) | linear blind unmixing; Mamba; state space model; spiral scanning | TBD | Jasper Ridge: Mean SAD 0.046 +/- 0.0018; RMSE 0.061 +/- 0.0032; best in the extracted table. | [note](notes/2026_icaace_matrix-spiral-scanning-mamba.md) |
 | 2026 | [GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing](https://doi.org/10.1109/TGRS.2026.3668181) | IEEE Transactions on Geoscience and Remote Sensing | LMM-constrained deep blind unmixing; G-GCN; GCA-Transformer; gated attention | TBD | Simulated/Jasper/Samson/APEX/Ray-Tracing: proposed mean aRMSE/aSAD/SRE = 0.06831/0.02848/23.29, 0.06039/0.06447/19.7, 0.06113/0.05348/20.32, 0.1091/0.07947/17.32, and 0.15945/0.07432/18.48; Cuprite has no GT abundance map. | [note](notes/2026_tgrs_ggct-net-dual-branch-gated-graph-convolution-grouped.md) |
 | 2026 | [MCDB-Net: Multiview Collaborative Dual-Branch Unmixing Network for Hyperspectral Images](https://doi.org/10.1109/TGRS.2026.3672192) | IEEE Transactions on Geoscience and Remote Sensing | linear blind unmixing; autoencoder; multiview learning; dual-branch network; spectral attention | TBD | Synthetic, Jasper Ridge, Samson and Cuprite: reports superior noise robustness and best or stronger overall SAD/RMSE, including a 1.46 percentage-point mean-SAD gain on Jasper Ridge. | [note](notes/2026_tgrs_mcdb-net-multiview-collaborative-dual-branch.md) |
@@ -159,6 +163,7 @@ The main editable table is in [data/papers.csv](data/papers.csv). This update in
 
 | Year | Title | Venue | Method | Code | Notes |
 |---:|---|---|---|---|---|
+| 2026 | [Hyperspectral Sparse Unmixing via Joint Robust Spatial Priors and Weighted Total Variation Regularization](https://doi.org/10.1109/JSTARS.2026.3668120) | IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing | linear semi-supervised unmixing; sparse unmixing; robust spatial priors; weighted total variation | TBD | [note](notes/2026_jstars_hyperspectral-sparse-unmixing-joint-robust-spatial-priors-weighted-tv.md) |
 | 2026 | [A Multiscale Synergistic Attention Network With Initialized Endmembers for Hyperspectral Unmixing](https://doi.org/10.1109/LGRS.2026.3672340) | IEEE Geoscience and Remote Sensing Letters | linear semi-supervised unmixing; autoencoder; attention; multiscale | TBD | TBD |
 | 2026 | [Endmember Selection With Adaptive Double Prior Model](https://doi.org/10.1109/TGRS.2026.3664867) | IEEE Transactions on Geoscience and Remote Sensing | linear semi-supervised unmixing; sparse unmixing; adaptive double prior; endmember selection | [GitHub](https://github.com/spdelphi/Double-Prior) | USGS synthetic, Cuprite, Urban, Jasper Ridge and Samson: mostly optimal/suboptimal SRE/RMSE under prior-error settings, with robust abundance maps on real scenes. [note](notes/2026_tgrs_endmember-selection-adaptive-double-prior-model.md) |
 | 2025 | [A New Fast Sparse Unmixing Algorithm Based on Adaptive Spectral Library Pruning and Nesterov Optimization](https://doi.org/10.1109/JSTARS.2025.3541257) | IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing | linear semi-supervised unmixing; sparse; graph; attention | TBD | TBD |
@@ -236,6 +241,7 @@ The main editable table is in [data/papers.csv](data/papers.csv). This update in
 
 | Year | Title | Venue | Method | Code | Notes |
 |---:|---|---|---|---|---|
+| 2026 | [Underdetermined Blind Source Separation via Weighted Simplex Shrinkage Regularization and Quantum Deep Image Prior](https://doi.org/10.1109/TIP.2026.3673957) | IEEE Transactions on Image Processing | mixed blind unmixing; multispectral unmixing; quantum deep image prior; weighted simplex shrinkage | TBD | [note](notes/2026_tip_underdetermined-bss-weighted-simplex-shrinkage-quantum-dip.md) |
 | 2026 | [DTU-Net: A Multi-Scale Dilated Transformer Network for Nonlinear Hyperspectral Unmixing](https://doi.org/10.1109/TGRS.2026.3658361) | IEEE Transactions on Geoscience and Remote Sensing | hybrid blind unmixing; autoencoder; transformer; attention; multiscale | TBD | TBD |
 | 2025 | [Hybrid Linear-Nonlinear Hyperspectral Unmixing of Homogeneous Solutions](https://doi.org/10.1109/ICECER65523.2025.11401230) | TBD | hybrid blind unmixing; NMF; bilinear | TBD | TBD |
 | 2025 | [Hyperspectral Unmixing Network Based on Hybrid Spectral Variability Model](https://doi.org/10.1109/IGARSS55030.2025.11243760) | IEEE IGARSS | hybrid blind unmixing; autoencoder; NMF; sparse; spectral variability | TBD | TBD |
