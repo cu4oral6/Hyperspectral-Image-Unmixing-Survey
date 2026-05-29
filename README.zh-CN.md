@@ -19,6 +19,7 @@
 
 ## 动态
 
+- **2026-05-29**：处理 13 个新增 PDF，新增 5 篇核心解混/验证条目、10 篇双语笔记，并同步数据集与实验记录。
 - **2026-05-28**：盘点 229 个本地 PDF，整理为 161 篇唯一收录论文，并新增 inventory 与 skipped 审核表。
 - **2026-05-28**：去除主列表中的重复/版本迭代论文，并按线性/非线性、盲/非盲解混重新分类。
 - **2026-05-28**：添加本地论文元数据、DOI、双语笔记和实验记录。
@@ -67,7 +68,7 @@ Y = AS + N
 
 ## 论文
 
-完整论文数据库维护在 [data/papers.csv](data/papers.csv)。本次从本地 `pdfs/` 文件夹索引了 **161 篇唯一收录论文**。重复文件按 DOI/标题折叠；未纳入主表的相关应用论文记录在 [data/skipped.csv](data/skipped.csv)，完整 PDF 盘点在 [data/pdf_inventory.csv](data/pdf_inventory.csv)。
+完整论文数据库维护在 [data/papers.csv](data/papers.csv)。本次从本地 `pdfs/` 文件夹索引了 **166 篇唯一收录论文**。重复文件按 DOI/标题折叠；未纳入主表的相关应用论文记录在 [data/skipped.csv](data/skipped.csv)，完整 PDF 盘点在 [data/pdf_inventory.csv](data/pdf_inventory.csv)。
 
 ### 线性盲解混
 
@@ -75,6 +76,7 @@ Y = AS + N
 | ---: | --- | --- | --- | --- | --- | --- |
 | 2026 | [A Hyperspectral Unmixing Method Based on Matrix Spiral Scanning Mamba](https://doi.org/10.1109/ICAACE69793.2026.11508730) | 2026 9th International Conference on Advanced Algorithms and Control Engineering (ICAACE) | 线性盲解混; Mamba; 状态空间模型; 螺旋扫描 | TBD | Jasper Ridge：Mean SAD 0.046 +/- 0.0018，RMSE 0.061 +/- 0.0032；已抽取表中最优。 | [中文笔记](notes/zh-CN/2026_icaace_matrix-spiral-scanning-mamba.md) |
 | 2026 | [GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing](https://doi.org/10.1109/TGRS.2026.3668181) | IEEE Transactions on Geoscience and Remote Sensing | 线性盲解混; Transformer; 图正则; 注意力 | TBD | Simulated、Jasper Ridge、Samson、APEX、Ray-Tracing、Cuprite：论文报告整体 SAD/RMSE/SRE 优于或达到对比基线最优水平。 | [中文笔记](notes/zh-CN/2026_tgrs_ggct-net-dual-branch-gated-graph-convolution-grouped.md) |
+| 2026 | [MCDB-Net: Multiview Collaborative Dual-Branch Unmixing Network for Hyperspectral Images](https://doi.org/10.1109/TGRS.2026.3672192) | IEEE Transactions on Geoscience and Remote Sensing | 线性盲解混; 自编码器; 多视角学习; 双分支网络; 光谱注意力 | TBD | synthetic、Jasper Ridge、Samson、Cuprite：论文报告噪声鲁棒性更强，整体 SAD/RMSE 优于或达到最佳，其中 Jasper Ridge mean SAD 提升 1.46 个百分点。 | [中文笔记](notes/zh-CN/2026_tgrs_mcdb-net-multiview-collaborative-dual-branch.md) |
 | 2026 | [Hyperspectral Image Synthesis Through Blind Unmixing Dictionary and Deep Diffusion Models](https://doi.org/10.1109/LGRS.2025.3646054) | IEEE Geoscience and Remote Sensing Letters, vol. 23 | 线性盲解混; 深度生成式解混; 图像合成；**主要讲 diffusion 生成图像** | [GitHub](https://github.com/martinapastorino/HSI_DDPM) | PRISMA、Urban 与合成场景：主要评估基于盲解混的图像/丰度合成质量，侧重视觉与光谱一致性对比。 | [中文笔记](notes/zh-CN/2026_grsl_hyperspectral-image-synthesis-through-blind-unmixing-dictionary-and-deep-diffusion-models.md) |
 | 2026 | [Hyperspectral Unmixing Using Frequency-Adaptive Convolutional-Mamba Network](https://doi.org/10.1109/JSTARS.2026.3677880) | IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing | 线性盲解混; Mamba; 光谱变异 | [GitHub](https://github.com/flyzzie/FACM) | Urban：报告平均 RMSE 0.1091、平均 SAD 0.1155，低于对比解混基线。 | [中文笔记](notes/zh-CN/2026_jstars_hyperspectral-unmixing-frequency-adaptive-convolutional-mamba-network.md) |
 | 2026 | [MS^2AE-Net: A Multiscale Spectral-Spatial Autoencoder Network for Hyperspectral Unmixing](https://doi.org/10.1109/TGRS.2026.3662051) | IEEE Transactions on Geoscience and Remote Sensing | 线性盲解混; 自编码器; 多尺度 | TBD | 包含 APEX 的合成与真实解混基准：论文报告 APEX 上 mean SAD/RMSE 最低，整体丰度/端元估计较强。 | [中文笔记](notes/zh-CN/2026_tgrs_ms2ae-net-multiscale-spectral-spatial-autoencoder-network-hyperspectral.md) |
@@ -96,6 +98,7 @@ Y = AS + N
 | 2025 | [Endmember Variation via Swarm Intelligence Optimization for Spatially Weighted Sparse Hyperspectral Unmixing](https://doi.org/10.1109/ICVISP68610.2025.11451704) | TBD | 线性盲解混; 稀疏; ADMM; 光谱变异 | TBD | 在 Urban 上，实验与解混基线比较，并报告重构、丰度或端元估计有所改善，评价指标包括 SAD/RMSE/MSE。 | [中文笔记](notes/zh-CN/2025_paper_endmember-variation-swarm-intelligence-optimization-spatially-weighted-sparse.md) |
 | 2025 | [Endmember-Free Hyperspectral Unmixing](https://doi.org/10.1109/JSTARS.2025.3605889) | IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing | 线性盲解混 | TBD | 在 Urban; synthetic 上，实验与解混基线比较，并报告重构、丰度或端元估计有所改善，评价指标包括 SAD。 | [中文笔记](notes/zh-CN/2025_jstars_endmember-free-hyperspectral-unmixing.md) |
 | 2025 | [Hyperspectral Blind Unmixing via First-Order Graph-Guided Sparse Nonnegative Matrix Factorization](https://doi.org/10.1109/ICVISP68610.2025.11451711) | 9th International Conference on Vision, Image and Signal Processing (ICVISP) | 线性盲解混; 图引导 稀疏 NMF | TBD | USGS synthetic：报告 10/20/30 dB 下的 SAD/RMSE；Samson：Mean SAD 0.0506，RMSE 0.2270。 | [中文笔记](notes/zh-CN/2025_icvisp_hyperspectral-blind-unmixing-via-fog-snmf.md) |
+| 2025 | [Hyperspectral Unmixing of Hyperspectral Data Gathered Using an UAV](https://doi.org/10.15388/vu.thesis.828) | Vilnius University doctoral dissertation | 线性盲解混; U-Net 自编码器; UAV 数据集; HU benchmark | [GitHub](https://github.com/VytautasPau/HUBenchmark) | BFHUD、DC Mall、Samson：HUNET 相比 Transformer baseline 在 BFHUD 和 Samson 上提升 RE/RMSE，但 SAD 表现有好有坏。 | [中文笔记](notes/zh-CN/2025_vilnius_hyperspectral-unmixing-uav.md) |
 | 2025 | [Hyperspectral Unmixing Based on Dual-Graph Manifold Regularization: Joint Preservation of Spatial-Spectral Geometric Structure](https://doi.org/10.1109/ICGMRS66001.2025.11065202) | TBD | 线性盲解混; NMF; 图正则 | TBD | 在 Urban; USGS synthetic; synthetic 上，实验与解混基线比较，并报告重构、丰度或端元估计有所改善，评价指标包括 SAD/RMSE/MSE。 | [中文笔记](notes/zh-CN/2025_paper_hyperspectral-unmixing-dual-graph-manifold-regularization-joint-preservation.md) |
 | 2025 | [Hyperspectral Unmixing Using l2,1 Norm-Based Robust Deep Nonnegative Matrix Factorization](https://doi.org/10.1109/IGARSS55030.2025.11242377) | IEEE IGARSS | 线性盲解混; NMF | TBD | 在 Samson; synthetic 上，实验与解混基线比较，并报告重构、丰度或端元估计有所改善，评价指标包括 SAD/RMSE/MSE。 | [中文笔记](notes/zh-CN/2025_igarss_hyperspectral-unmixing-l21-norm-robust-deep-nonnegative-matrix.md) |
 | 2025 | [Hyperspectral Unmixing via Nonconvex Low-Rank and Weighted Sparsity Constraints](https://doi.org/10.1109/ICVISP68610.2025.11451684) | TBD | 线性盲解混; 稀疏; ADMM; 低秩 | TBD | 在 Jasper Ridge; USGS synthetic; synthetic 上，实验与解混基线比较，并报告重构、丰度或端元估计有所改善，评价指标包括 SAD/RMSE/MSE。 | [中文笔记](notes/zh-CN/2025_paper_hyperspectral-unmixing-nonconvex-low-rank-weighted-sparsity-constraints.md) |
@@ -117,6 +120,7 @@ Y = AS + N
 | 2025 | [Unrolling Plug-and-Play Network for Hyperspectral Unmixing](https://doi.org/10.1109/TGRS.2025.3540992) | IEEE Transactions on Geoscience and Remote Sensing, vol. 63 | 线性盲解混; 展开式即插即用网络 | TBD | 在 synthetic; 真实数据集上，实验与解混基线比较，并报告重构、丰度或端元估计有所改善，评价指标包括 SAD/RMSE/MSE。 | [中文笔记](notes/zh-CN/2025_tgrs_unrolling-plug-play-network-hyperspectral-unmixing.md) |
 | 2025 | [Updated Homogeneity Criteria Based Low-Dimensional Representation for Hyperspectral Unmixing](TBD) | TBD | 线性盲解混; NMF | TBD | 在合成数值实验上，实验与解混基线比较，并报告重构、丰度或端元估计有所改善，评价指标包括 SAD/RMSE/MSE。 | [中文笔记](notes/zh-CN/2025_paper_updated-homogeneity-criteria-low-dimensional-representation-hyperspectral-unmixing.md) |
 | 2025 | [URDM: Hyperspectral Unmixing Regularized by Diffusion Models](https://doi.org/10.1109/TIP.2025.3638151) | IEEE Transactions on Image Processing | 线性盲解混; 扩散模型; 图正则; ADMM | TBD | 在 Urban; synthetic 上，实验与解混基线比较，并报告重构、丰度或端元估计有所改善，评价指标包括 aRMSE/aSAD/SAD/RMSE/MSE。 | [中文笔记](notes/zh-CN/2025_tip_urdm-hyperspectral-unmixing-regularized-diffusion-models.md) |
+| 2024 | [Multi-modal and multi-objective hyperspectral unmixing model based on multi-source data](https://doi.org/10.1016/j.compag.2024.109505) | Computers and Electronics in Agriculture | 线性盲解混; 多模态端元束提取; 多目标 PSO; 光谱变异 | TBD | MUUFL：mRMSE 0.1853、re-min mSAD 0.0325；Houston：mRMSE 0.1548、最佳 re-min mSAD 0.0341。 | [中文笔记](notes/zh-CN/2024_compag_multi-modal-multi-objective-hyperspectral-unmixing.md) |
 | 2024 | [A Fast Sparse NMF Optimization Algorithm for Hyperspectral Unmixing](https://doi.org/10.1109/JSTARS.2023.3341583) | IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing | 线性盲解混; NMF; 稀疏; 注意力 | TBD | 在 synthetic 上，实验与解混基线比较，并报告重构、丰度或端元估计有所改善，评价指标包括 SAD/RMSE/MSE。 | [中文笔记](notes/zh-CN/2024_jstars_fast-sparse-nmf-optimization-algorithm-hyperspectral-unmixing.md) |
 | 2024 | [A Generalized Multiscale Bundle-Based Hyperspectral Sparse Unmixing Algorithm](https://doi.org/10.1109/LGRS.2024.3358694) | IEEE Geoscience and Remote Sensing Letters | 线性盲解混; 稀疏; 端元束; 光谱变异; 多尺度 | [GitHub](https://github.com/lucayress/GMBUA) | 在 synthetic 上，实验与解混基线比较，并报告重构、丰度或端元估计有所改善，评价指标包括 SAD/RMSE/MSE。 | [中文笔记](notes/zh-CN/2024_grsl_generalized-multiscale-bundle-hyperspectral-sparse-unmixing-algorithm.md) |
 | 2024 | [A New ADMM-Based Hyperspectral Unmixing Algorithm Associated with a Linear Mixing Model Addressing Spectral Variability with a Multiplicative Structure](https://doi.org/10.1109/IGARSS53475.2024.10640925) | IEEE IGARSS | 线性盲解混; ADMM; 光谱变异 | TBD | 在 synthetic 上，实验与解混基线比较，并报告重构、丰度或端元估计有所改善，评价指标包括 SAD/RMSE/MSE。 | [中文笔记](notes/zh-CN/2024_igarss_new-admm-hyperspectral-unmixing-algorithm-associated-linear-mixing.md) |
@@ -165,6 +169,7 @@ Y = AS + N
 | 年份 | 标题 | 出版源 | 方法 | 代码 | 笔记 |
 |---:|---|---|---|---|---|
 | 2026 | [A Multiscale Synergistic Attention Network With Initialized Endmembers for Hyperspectral Unmixing](https://doi.org/10.1109/LGRS.2026.3672340) | IEEE Geoscience and Remote Sensing Letters | 线性半盲/非盲解混; 自编码器; 注意力; 多尺度 | TBD | TBD |
+| 2026 | [Endmember Selection With Adaptive Double Prior Model](https://doi.org/10.1109/TGRS.2026.3664867) | IEEE Transactions on Geoscience and Remote Sensing | 线性半盲/非盲解混; 稀疏解混; 自适应双先验; 端元选择 | [GitHub](https://github.com/spdelphi/Double-Prior) | USGS synthetic、Cuprite、Urban、Jasper Ridge、Samson：先验误差实验中 SRE/RMSE 多数最优或次优，真实场景丰度图更稳健。 [中文笔记](notes/zh-CN/2026_tgrs_endmember-selection-adaptive-double-prior-model.md) |
 | 2025 | [A New Fast Sparse Unmixing Algorithm Based on Adaptive Spectral Library Pruning and Nesterov Optimization](https://doi.org/10.1109/JSTARS.2025.3541257) | IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing | 线性半盲/非盲解混; 稀疏; 图正则; 注意力 | TBD | TBD |
 | 2025 | [Adaptive Multitask Autoencoder-Based Hyperspectral Unmixing Exploiting Auxiliary Data via Graph Associations](https://doi.org/10.1109/TGRS.2025.3551119) | IEEE Transactions on Geoscience and Remote Sensing, vol. 63 | 线性辅助数据解混; 自适应多任务自编码器; 图关联 | TBD | TBD |
 | 2025 | [Double-Weighted Spatial Low-Rank and Superpixel-Guided Adaptive Graph Laplacian Regularization for Sparse Hyperspectral Unmixing](https://doi.org/10.1109/TIM.2025.3548194) | IEEE Transactions on Instrumentation and Measurement | 线性半盲/非盲解混; 稀疏; 图正则; 低秩 | TBD | TBD |
@@ -254,6 +259,7 @@ Y = AS + N
 
 | 年份 | 标题 | 出版源 | 方法 | 代码 | 笔记 |
 |---:|---|---|---|---|---|
+| 2026 | [Cross-Scale Validation of Hyperspectral Unmixing Over Agricultural Landscapes](https://doi.org/10.1109/LGRS.2026.3687594) | IEEE Geoscience and Remote Sensing Letters | 跨尺度验证; AE-SU 与 FCLS; 农业分数覆盖 | TBD | Tanager-1 vineyard：AE-SU overlap / JS divergence 为 0.80 / 0.059，优于 FCLS 的 0.72 / 0.079。 [中文笔记](notes/zh-CN/2026_grsl_cross-scale-validation-hyperspectral-unmixing-agricultural.md) |
 | 2025 | [A Benchmark Linear Unmixing Dataset With Spectral Variability and Ground Truth](https://doi.org/10.1109/WHISPERS69515.2025.11501633) | WHISPERS | 综述/数据集/工具 | TBD | TBD |
 | 2024 | [A Detailed Analysis of Datasets Used in HSI in the Context of Mixture Models for Unmixing](https://doi.org/10.1109/MERCon63886.2024.10689093) | TBD | 综述/数据集/工具 | TBD | TBD |
 | 2024 | [A New Hyperspectral Unmixing Benchmark for Weak Signal Meat Contamination Detection](https://doi.org/10.1109/DICTA63115.2024.00088) | TBD | 综述/数据集/工具 | TBD | TBD |
@@ -266,25 +272,32 @@ Y = AS + N
 
 | 数据集 | 场景类型 | 真实值 | 常见用途 | 收录论文数 | 代表论文 | 链接 |
 |---|---|---|---|---:|---|---|
-| synthetic | 合成数据 | 端元与丰度 | 通用受控合成解混实验 | 68 | GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing; Hyperspectral Image Synthesis Through Blind Unmixing Dictionary and Deep Diffusion Models; +66 more | TBD |
-| Urban | 遥感 | 端元与丰度 | 城市线性解混基准 | 27 | Hyperspectral Image Synthesis Through Blind Unmixing Dictionary and Deep Diffusion Models; Hyperspectral Unmixing Using Frequency-Adaptive Convolutional-Mamba Network; +25 more | TBD |
-| USGS synthetic | 合成数据 | 端元与丰度 | 受控合成解混基准 | 16 | A hyperspectral unmixing model for local distance-weighted variation; Band Mask Network with Spatial-Spectral Fusion for Hyperspectral Unmixing; +14 more | TBD |
-| Samson | 遥感 | 端元与丰度 | 经典线性解混基准 | 13 | GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing; ACR-Net: Adaptive Correlation Refined Hyperspectral Unmixing; +11 more | TBD |
-| Jasper Ridge | 遥感 | 端元与丰度 | 经典线性解混基准 | 11 | A Hyperspectral Unmixing Method Based on Matrix Spiral Scanning Mamba; GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing; +9 more | TBD |
+| synthetic | 合成数据 | 端元与丰度 | 通用受控合成解混实验 | 69 | GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing; Hyperspectral Image Synthesis Through Blind Unmixing Dictionary and Deep Diffusion Models; +66 more | TBD |
+| Urban | 遥感 | 端元与丰度 | 城市线性解混基准 | 28 | Hyperspectral Image Synthesis Through Blind Unmixing Dictionary and Deep Diffusion Models; Hyperspectral Unmixing Using Frequency-Adaptive Convolutional-Mamba Network; +25 more | TBD |
+| USGS synthetic | 合成数据 | 端元与丰度 | 受控合成解混基准 | 18 | A hyperspectral unmixing model for local distance-weighted variation; Band Mask Network with Spatial-Spectral Fusion for Hyperspectral Unmixing; +14 more | TBD |
+| Samson | 遥感 | 端元与丰度 | 经典线性解混基准 | 16 | GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing; ACR-Net: Adaptive Correlation Refined Hyperspectral Unmixing; +11 more | TBD |
+| Jasper Ridge | 遥感 | 端元与丰度 | 经典线性解混基准 | 13 | A Hyperspectral Unmixing Method Based on Matrix Spiral Scanning Mamba; GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing; +9 more | TBD |
 | 真实数据集 | 遥感 | 随论文而定 | 通用真实数据解混评估 | 18 | A Spectral-Spatial Attention Network for Hyperspectral Unmixing; Integrating Recurrent-KAN With SAM Adapter for Blind Hyperspectral Unmixing; +16 more | TBD |
-| Cuprite | 遥感 | 参考矿物 | 端元提取与矿物制图 | 6 | GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing; A hyperspectral unmixing model for local distance-weighted variation; +4 more | TBD |
-| APEX | 遥感 | 随论文而定 | 机载高光谱解混基准 | 5 | GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing; MS^2AE-Net: A Multiscale Spectral-Spatial Autoencoder Network for Hyperspectral Unmixing; +3 more | TBD |
+| Cuprite | 遥感 | 参考矿物 | 端元提取与矿物制图 | 8 | GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing; A hyperspectral unmixing model for local distance-weighted variation; +4 more | TBD |
+| APEX | 遥感 | 随论文而定 | 机载高光谱解混基准 | 6 | GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing; MS^2AE-Net: A Multiscale Spectral-Spatial Autoencoder Network for Hyperspectral Unmixing; +3 more | TBD |
 | PRISMA | 遥感 | 当前条目未使用公开丰度真值 | 高光谱图像合成与丰度图生成 | 4 | Hyperspectral Image Synthesis Through Blind Unmixing Dictionary and Deep Diffusion Models; Deep Diffusion Models and Unsupervised Hyperspectral Unmixing for Realistic Abundance Map Synthesis; +2 more | TBD |
 | auxiliary data | 辅助数据 | 随论文而定 | 带外部辅助信息的解混 | 1 | Adaptive Multitask Autoencoder-Based Hyperspectral Unmixing Exploiting Auxiliary Data via Graph Associations | TBD |
 | AVIRIS | 遥感 | 随场景而定 | 机载高光谱与矿物制图 | 1 | Graph Laplacian Regularization and Local Collaborative Sparse Regression Based on Superpixel Segmentation for Hyperspectral Imagery | TBD |
 | DLR HySU | 遥感 | 所列实验有参考丰度 | 光谱变异解混实验 | 1 | A Two-Step Linear Mixing Model for Unmixing Under Hyperspectral Variability | TBD |
 | HYDICE | 遥感 | 随场景而定 | 真实高光谱基准 | 1 | SpACNN-LDVAE: Spatial Attention Convolutional Latent Dirichlet Variational Autoencoder for Hyperspectral Pixel Unmixing | TBD |
 | hyperspectral plus LiDAR | 多模态 | 随论文而定 | 结合空间/高程辅助信息的多模态解混 | 1 | MSSF-Net: A Multimodal Spectral-Spatial Feature Fusion Network for Hyperspectral Unmixing | TBD |
-| MUUFL | 遥感 | 随基准而定 | 城市高光谱基准 | 1 | ACR-Net: Adaptive Correlation Refined Hyperspectral Unmixing | TBD |
+| MUUFL | 遥感 | 随基准而定 | 城市高光谱基准 | 2 | ACR-Net: Adaptive Correlation Refined Hyperspectral Unmixing; Multi-modal and multi-objective hyperspectral unmixing model based on multi-source data | TBD |
 | Pavia | 遥感 | 随基准而定 | 城市遥感基准 | 1 | ACR-Net: Adaptive Correlation Refined Hyperspectral Unmixing | TBD |
 | Ray-Tracing | 合成数据 | 端元与丰度 | 物理/渲染式合成解混基准 | 1 | GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing | TBD |
 | spectral library | 光谱库 | 已知光谱签名 | 稀疏/非盲解混先验 | 1 | Diffusion-Model-Based Hyperspectral Unmixing Using Spectral Prior Distribution | TBD |
 | synthetic multi-source experiments | 合成数据 | 端元与丰度 | 多源高光谱合成/融合基准 | 1 | Unmixing Before Fusion: A Generalized Paradigm for Multi-Source-Based Hyperspectral Image Synthesis | TBD |
+| Houston | 遥感 | 所列论文使用端元类别与辅助 DSM | HSI + DSM 多模态端元束提取 | 1 | Multi-modal and multi-objective hyperspectral unmixing model based on multi-source data | https://hyperspectral.ee.uh.edu |
+| BFHUD | UAV 农业 | VCA 近似端元与类别图 | UAV 农业 HU 基准 | 1 | Hyperspectral Unmixing of Hyperspectral Data Gathered Using an UAV | https://doi.org/10.5281/zenodo.13856357 |
+| DC Mall | 遥感 | 分类式真值用于 HU 评价 | 城市 HSI 基准 | 1 | Hyperspectral Unmixing of Hyperspectral Data Gathered Using an UAV | TBD |
+| IEEE GRSS synthetic | 合成数据 | 已知模拟丰度与端元 | HU 鲁棒性和图像尺寸 benchmark | 1 | Hyperspectral Unmixing of Hyperspectral Data Gathered Using an UAV | TBD |
+| Tanager-1 vineyard | 农业遥感 | 由 UAV 植被覆盖与野外光谱验证 | 土壤/植被丰度跨尺度验证 | 1 | Cross-Scale Validation of Hyperspectral Unmixing Over Agricultural Landscapes | TBD |
+| VHR UAV imagery | UAV 农业 | 植被 mask / fractional cover 参考 | 卫星 HSI 解混跨尺度验证参考 | 1 | Cross-Scale Validation of Hyperspectral Unmixing Over Agricultural Landscapes | TBD |
+| field spectra | 野外光谱 | 实测端元光谱 | 土壤与植被端元参考 | 1 | Cross-Scale Validation of Hyperspectral Unmixing Over Agricultural Landscapes | TBD |
 | synthetic numerical SCA/NCA tests | 合成数据 | 已知模拟因子 | 最小体积分解数值基准 | 1 | Linearized ADMM for Simplicial and Nonnegative Component Analyses | TBD |
 | synthetic SCA/NCA tests | 合成数据 | 已知模拟因子 | 最小体积分解数值基准 | 1 | Frank-Wolfe Algorithm for Simplicial and Nonnegative Component Analysis | TBD |
 | 合成数值实验 | 遥感 | 随论文而定 | 合成数值解混评估 | 1 | Updated Homogeneity Criteria Based Low-Dimensional Representation for Hyperspectral Unmixing | TBD |
@@ -302,6 +315,10 @@ Y = AS + N
 | SUMamba | Jasper Ridge | 4 | Mean SAD | 0.046 +/- 0.0018 | soil / tree / water / road |
 | SUMamba | Jasper Ridge | 4 | RMSE | 0.061 +/- 0.0032 | 丰度估计 |
 | SUMamba | Jasper Ridge | 4 | SAD by endmember | 0.056 / 0.050 / 0.031 / 0.046 | soil / tree / water / road |
+| MMO-CDPSO-RSADRDSM | MUUFL | 5 | mRMSE / re-min mSAD | 0.1853 / 0.0325 | HSI + DSM 端元束提取 |
+| MMO-CDPSO-RSADRDSM | Houston | 4 | mRMSE / re-min mSAD | 0.1548 / 0.0341 | HSI + DSM 端元束提取 |
+| AE-SU | Tanager-1 vineyard | 2 | overlap / JS divergence | 0.80 / 0.059 | 与 UAV 植被覆盖做分布级验证 |
+| HUNET | BFHUD | 6 | RE / RMSE / SAD | 0.0754 / 0.3625 / 0.6632 | U-Net HU 模型与 Transformer baseline 对比 |
 
 常见指标：
 
