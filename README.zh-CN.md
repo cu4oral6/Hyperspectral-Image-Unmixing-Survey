@@ -32,6 +32,7 @@ WHU-Hi
 
 ## 动态
 
+- **2026-06-02**：处理 1 个新增 PDF，新增 FNMamba 元数据、双语笔记，并补充 Jasper Ridge / Samson 实验记录。
 - **2026-05-29**：处理 21 个新增 PDF，新增 6 篇核心解混条目、12 篇双语笔记，并同步 skipped 与 inventory。
 - **2026-05-28**：盘点 229 个本地 PDF，整理为 161 篇唯一收录论文，并新增 inventory 与 skipped 审核表。
 - **2026-05-28**：去除主列表中的重复/版本迭代论文，并按线性/非线性、盲/非盲解混重新分类。
@@ -82,7 +83,7 @@ Y = AS + N
 
 ## 论文
 
-完整论文数据库维护在 [data/papers.csv](data/papers.csv)。本次从本地 `pdfs/` 文件夹索引了 **172 篇唯一收录论文**。重复文件按 DOI/标题折叠；未纳入主表的相关应用论文记录在 [data/skipped.csv](data/skipped.csv)，完整 PDF 盘点在 [data/pdf_inventory.csv](data/pdf_inventory.csv)。
+完整论文数据库维护在 [data/papers.csv](data/papers.csv)。本次从本地 `pdfs/` 文件夹索引了 **173 篇唯一收录论文**。重复文件按 DOI/标题折叠；未纳入主表的相关应用论文记录在 [data/skipped.csv](data/skipped.csv)，完整 PDF 盘点在 [data/pdf_inventory.csv](data/pdf_inventory.csv)。
 
 ### 线性盲解混
 
@@ -91,6 +92,7 @@ Y = AS + N
 | 2026 | [Blind Hyperspectral Unmixing With Integrated Nonsmooth and CEM Spatial Constraints](https://doi.org/10.1109/JSTARS.2026.3678308) | IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing **IEEE JSTARS = 遥感领域正规 SCI Q1 / 中科院 2 区期刊** | 线性盲解混; NMF; 端元非光滑约束; CEM 空间稀疏正则 | 无 | 合成和真实 HSI：论文报告在噪声下端元/丰度估计更鲁棒，指标包括 SAD/RMSE。 | [中文笔记](notes/zh-CN/2026_jstars_blind-hyperspectral-unmixing-integrated-nonsmooth-cem-spatial.md) |
 | 2026 | [Conic Hull Fitting-Based Dictionary Matrix Learning for Nonnegative Matrix Factorization](https://doi.org/10.1109/TSMC.2026.3655184) | IEEE Transactions on Systems, Man, and Cybernetics: Systems | 线性盲解混; NMF; 锥包拟合; 字典学习 | 无 | 合成和真实 NMF 任务（含 HU）：面向纯像元/1-sparse 假设较弱的非可分情形。 | [中文笔记](notes/zh-CN/2026_tsmc_conic-hull-fitting-dictionary-matrix-learning-nmf.md) |
 | 2026 | [EMT-HEE: An Evolutionary Multi-Tasking Method for Hyperspectral Endmember Extraction](https://doi.org/10.1109/TETCI.2025.3634746) | IEEE Transactions on Emerging Topics in Computational Intelligence | 线性盲解混; 端元提取; 进化多任务 | 无 | 合成和真实 HSI：通过主任务/辅助任务进化搜索提升端元提取质量。 | [中文笔记](notes/zh-CN/2026_tetci_emt-hee-evolutionary-multitasking-hyperspectral-endmember-extraction.md) |
+| 2026 | FNMamba: A Far-to-Near Scanning Dual Mamba Network for Hyperspectral Image Unmixing | TBD | 线性盲解混; 双分支 Mamba; far-to-near 空间扫描; 分组光谱 Mamba | 无 | Jasper Ridge / Samson：mean SAD/RMSE 分别为 0.0340/0.0807 和 0.0207/0.0502；Jasper Ridge 上 mean SAD 最优，Samson 上 mean SAD/RMSE 均最优。 | [中文笔记](notes/zh-CN/2026_paper_fnmamba-far-to-near-scanning-dual-mamba-network-hu.md) |
 | 2026 | [MS2ANet: A Multiscale Spatial-Spectrum Agent Attention Network for Crop Hyperspectral Image Unmixing](https://doi.org/10.1109/TGRS.2026.3687879) | IEEE Transactions on Geoscience and Remote Sensing | 线性盲解混; 多尺度空洞卷积; spatial-spectrum agent attention; 作物解混 | 无 | 作物 HSI 与 HU 场景：论文报告边界敏感的作物/背景丰度估计更强，指标包括 SAD/RMSE。 | [中文笔记](notes/zh-CN/2026_tgrs_ms2anet-multiscale-spatial-spectrum-agent-attention-crop-hu.md) |
 | 2026 | [A Hyperspectral Unmixing Method Based on Matrix Spiral Scanning Mamba](https://doi.org/10.1109/ICAACE69793.2026.11508730) | 2026 9th International Conference on Advanced Algorithms and Control Engineering (ICAACE) | 线性盲解混; Mamba; 状态空间模型; 螺旋扫描 | 无 | Jasper Ridge：Mean SAD 0.046 +/- 0.0018，RMSE 0.061 +/- 0.0032；已抽取表中最优。 | [中文笔记](notes/zh-CN/2026_icaace_matrix-spiral-scanning-mamba.md) |
 | 2026 | [GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing](https://doi.org/10.1109/TGRS.2026.3668181) | IEEE Transactions on Geoscience and Remote Sensing | LMM 约束的深度盲解混; G-GCN; GCA-Transformer; 门控注意力 | 无 | Simulated/Jasper/Samson/APEX/Ray-Tracing：Proposed 平均 aRMSE/aSAD/SRE 分别为 0.06831/0.02848/23.29、0.06039/0.06447/19.7、0.06113/0.05348/20.32、0.1091/0.07947/17.32、0.15945/0.07432/18.48；Cuprite 无真实丰度图。 | [中文笔记](notes/zh-CN/2026_tgrs_ggct-net-dual-branch-gated-graph-convolution-grouped.md) |
@@ -295,8 +297,8 @@ Y = AS + N
 | synthetic | 合成数据 | 端元与丰度 | 通用受控合成解混实验 | 69 | GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing; Hyperspectral Image Synthesis Through Blind Unmixing Dictionary and Deep Diffusion Models; +66 more | TBD |
 | Urban | 遥感 | 端元与丰度 | 城市线性解混基准 | 28 | Hyperspectral Image Synthesis Through Blind Unmixing Dictionary and Deep Diffusion Models; Hyperspectral Unmixing Using Frequency-Adaptive Convolutional-Mamba Network; +25 more | TBD |
 | USGS synthetic | 合成数据 | 端元与丰度 | 受控合成解混基准 | 18 | A hyperspectral unmixing model for local distance-weighted variation; Band Mask Network with Spatial-Spectral Fusion for Hyperspectral Unmixing; +14 more | TBD |
-| Samson | 遥感 | 端元与丰度 | 经典线性解混基准 | 16 | GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing; ACR-Net: Adaptive Correlation Refined Hyperspectral Unmixing; +11 more | TBD |
-| Jasper Ridge | 遥感 | 端元与丰度 | 经典线性解混基准 | 13 | A Hyperspectral Unmixing Method Based on Matrix Spiral Scanning Mamba; GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing; +9 more | TBD |
+| Samson | 遥感 | 端元与丰度 | 经典线性解混基准 | 17 | FNMamba: A Far-to-Near Scanning Dual Mamba Network for Hyperspectral Image Unmixing; GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing; +12 more | TBD |
+| Jasper Ridge | 遥感 | 端元与丰度 | 经典线性解混基准 | 14 | FNMamba: A Far-to-Near Scanning Dual Mamba Network for Hyperspectral Image Unmixing; A Hyperspectral Unmixing Method Based on Matrix Spiral Scanning Mamba; +10 more | TBD |
 | 真实数据集 | 遥感 | 随论文而定 | 通用真实数据解混评估 | 18 | A Spectral-Spatial Attention Network for Hyperspectral Unmixing; Integrating Recurrent-KAN With SAM Adapter for Blind Hyperspectral Unmixing; +16 more | TBD |
 | Cuprite | 遥感 | 参考矿物 | 端元提取与矿物制图 | 8 | GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing; A hyperspectral unmixing model for local distance-weighted variation; +4 more | TBD |
 | APEX | 遥感 | 随论文而定 | 机载高光谱解混基准 | 6 | GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing; MS^2AE-Net: A Multiscale Spectral-Spatial Autoencoder Network for Hyperspectral Unmixing; +3 more | TBD |
@@ -335,6 +337,10 @@ Y = AS + N
 | SUMamba | Jasper Ridge | 4 | Mean SAD | 0.046 +/- 0.0018 | soil / tree / water / road |
 | SUMamba | Jasper Ridge | 4 | RMSE | 0.061 +/- 0.0032 | 丰度估计 |
 | SUMamba | Jasper Ridge | 4 | SAD by endmember | 0.056 / 0.050 / 0.031 / 0.046 | soil / tree / water / road |
+| FNMamba | Jasper Ridge | 4 | Mean SAD | 0.0340 | tree / water / soil / road；原表单位 x10^-2 |
+| FNMamba | Jasper Ridge | 4 | RMSE | 0.0807 | tree / water / soil / road；原表单位 x10^-2 |
+| FNMamba | Samson | 3 | Mean SAD | 0.0207 | soil / tree / water；原表单位 x10^-2 |
+| FNMamba | Samson | 3 | RMSE | 0.0502 | soil / tree / water；原表单位 x10^-2 |
 | MMO-CDPSO-RSADRDSM | MUUFL | 5 | mRMSE / re-min mSAD | 0.1853 / 0.0325 | HSI + DSM 端元束提取 |
 | MMO-CDPSO-RSADRDSM | Houston | 4 | mRMSE / re-min mSAD | 0.1548 / 0.0341 | HSI + DSM 端元束提取 |
 | AE-SU | Tanager-1 vineyard | 2 | overlap / JS divergence | 0.80 / 0.059 | 与 UAV 植被覆盖做分布级验证 |

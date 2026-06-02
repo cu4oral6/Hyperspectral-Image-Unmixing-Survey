@@ -20,3 +20,7 @@ GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Tran
 GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing,Samson,3,aRMSE / aSAD / SRE,0.06113 / 0.05348 / 20.32,"Proposed GGCT-Net; endmembers: soil / tree / water"
 GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing,APEX,4,aRMSE / aSAD / SRE,0.1091 / 0.07947 / 17.32,"Proposed GGCT-Net; endmembers reported in the paper include road / soil or rooftop / tree / water depending on table/description naming"
 GGCT-Net: A Dual-Branch Gated Graph Convolution and Grouped Cross-Attention Transformer Network for Hyperspectral Unmixing,Ray-Tracing,3,aRMSE / aSAD / SRE,0.15945 / 0.07432 / 18.48,"Proposed GGCT-Net; orchard ray-tracing scene with soil / weed / tree components"
+FNMamba,Jasper Ridge,4,Mean SAD,0.0340,Original table reports values x10^-2; endmembers tree / water / soil / road; per-endmember SAD 0.0429 / 0.0344 / 0.0374 / 0.0212
+FNMamba,Jasper Ridge,4,RMSE,0.0807,Original table reports values x10^-2; per-endmember RMSE 0.0723 / 0.0596 / 0.0938 / 0.0972; TANet has lower mean RMSE 0.0754 in the same table
+FNMamba,Samson,3,Mean SAD,0.0207,Original table reports values x10^-2; endmembers soil / tree / water; per-endmember SAD 0.0135 / 0.0268 / 0.0218
+FNMamba,Samson,3,RMSE,0.0502,Original table reports values x10^-2; per-endmember RMSE 0.0452 / 0.0565 / 0.0489; best mean RMSE in the compared table
