@@ -24,3 +24,13 @@ FNMamba,Jasper Ridge,4,Mean SAD,0.0340,Original table reports values x10^-2; end
 FNMamba,Jasper Ridge,4,RMSE,0.0807,Original table reports values x10^-2; per-endmember RMSE 0.0723 / 0.0596 / 0.0938 / 0.0972; TANet has lower mean RMSE 0.0754 in the same table
 FNMamba,Samson,3,Mean SAD,0.0207,Original table reports values x10^-2; endmembers soil / tree / water; per-endmember SAD 0.0135 / 0.0268 / 0.0218
 FNMamba,Samson,3,RMSE,0.0502,Original table reports values x10^-2; per-endmember RMSE 0.0452 / 0.0565 / 0.0489; best mean RMSE in the compared table
+PICT-Net,Samson,3,RMSE / aSAD,0.0531 / 0.0371,"Proposed PICT-Net; compared with CyCU-Net, EGU, DeepTrans, and Swin-HU; lower is better"
+PICT-Net,APEX,4,RMSE / aSAD,0.1136 / 0.0836,"Proposed PICT-Net; compared with CyCU-Net, EGU, DeepTrans, and Swin-HU; lower is better"
+PICT-Net,Houston,4,RMSE / aSAD,0.1500 / 0.1203,"Proposed PICT-Net; compared with CyCU-Net, EGU, DeepTrans, and Swin-HU; lower is better"
+PICT-Net,MUUFL,5,RMSE / aSAD,0.2457 / 0.0613,"Proposed PICT-Net; compared with CyCU-Net, EGU, DeepTrans, and Swin-HU; lower is better"
+Adapted U-Net UAV HU,APEX,4,mRMSE / mSAD / RE,0.4705 / 0.1737 / 0.0990,Proposed adapted U-Net; compared with transformer HU baseline; lower is better
+Adapted U-Net UAV HU,Samson,3,mRMSE / mSAD / RE,0.4301 / 0.1507 / 0.0526,Proposed adapted U-Net; compared with transformer HU baseline; lower is better
+Adapted U-Net UAV HU,Blueberry UAV Cube 1,6,mRMSE / mSAD / RE,0.3112 / 0.2737 / 0.0752,Proposed adapted U-Net; compared with transformer HU baseline; lower is better
+Adapted U-Net UAV HU,Blueberry UAV Cube 2,6,mRMSE / mSAD / RE,0.3740 / 0.2591 / 0.1263,Proposed adapted U-Net; compared with transformer HU baseline; lower is better
+Adapted U-Net UAV HU,Blueberry UAV Cube 3,6,mRMSE / mSAD / RE,0.3088 / 0.2214 / 0.0978,Proposed adapted U-Net; compared with transformer HU baseline; lower is better
+Precision crop mapping crop-soil HU,cabbage crop-soil sub-canopy HSI,2,abundance accuracy,~0.99-1.00,Best crop/soil discrimination accuracy using multi-sensor spectral libraries and linear/nonlinear/sparse unmixing; exact value depends on endmember source and flight height
